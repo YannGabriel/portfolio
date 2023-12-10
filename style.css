@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'cool';
+    src: url(fontes/cool.otf);
+}
+
+@font-face {
+    font-family: 'cc';
+    src: url(fontes/cc.otf);
+}
+
+body{
+    margin: auto;
+    background-image: url(imagens/background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 95%;
+    height: 95vh;
+}
+
+.text{
+    font-family: 'cool';
+    font-size: 20px;
+}
+
+#color{
+    display: inline-block;
+    color: goldenrod;
+}
+
+div.text{
+    background-color: rgba(128, 128, 128, 0.71);
+    padding: 30px;
+    border-radius: 10px;
+    border: solid 1px goldenrod;
+    margin: auto;
+    width: 300px;
+    text-align: center;
+}
+
+h1{
+    font-family: 'cc';
+    text-align: center;
+    color: goldenrod;
+    margin: auto;
+}
+
+#imagens > img{
+    padding-top: 100px;
+    padding-bottom: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+}
+
+.imagens{
+    display: flex;
+    justify-content: space-evenly;
+    width: 400px;
+    margin: auto;
+}
+
+.imagens img:hover{
+    transition: all 0.7s;
+    transform: scale(1.15);
+    filter: saturate(100%);
+
+}
+
+div.imagens img{
+    filter: grayscale(200%);
+    transition: all(0.7s);
+    width: 60px;
+}
