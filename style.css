@@ -97,13 +97,13 @@ a:hover{
 }
 
 #imagens-s img{
-    width: 350px;
+    width: 250px;
     filter: grayscale(100%);
     border-radius: 10px;
 }
 
 #imagens-s img:hover{
     filter: saturate(100%);
-    scale: 1.1;
+    scale: 1.015;
     transition: all 0.8s;
 }
