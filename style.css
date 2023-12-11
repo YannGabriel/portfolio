@@ -28,7 +28,9 @@ body{
 }
 
 div.text{
-    background-color: rgba(128, 128, 128, 0.71);
+    color: white;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
     padding: 30px;
     border-radius: 10px;
     border: solid 1px goldenrod;
@@ -71,4 +73,37 @@ div.imagens img{
     filter: grayscale(200%);
     transition: all(0.7s);
     width: 60px;
+}
+
+#link{
+    display: inline-block;
+}
+
+a{
+    font-family: 'cool';
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+    color: goldenrod;
+    text-decoration: none;
+    letter-spacing: 0.75px;
+}
+
+a:hover{
+    text-decoration: underline;
+    animation: normal;
+    transition: all 0.7s;
+}
+
+#imagens-s img{
+    width: 350px;
+    filter: grayscale(100%);
+    border-radius: 10px;
+}
+
+#imagens-s img:hover{
+    filter: saturate(100%);
+    scale: 1.1;
+    transition: all 0.8s;
 }
