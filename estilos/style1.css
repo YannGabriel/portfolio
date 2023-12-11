@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'cool';
-    src: url(fontes/cool.otf);
+    src: url(../fontes/cool.otf);
 }
 
 @font-face {
     font-family: 'cc';
-    src: url(fontes/cc.otf);
+    src: url(../fontes/cc.otf);
 }
 
 body{
     margin: auto;
-    background-image: url(imagens/background.png);
+    background-image: url(../imagens/background.png);
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
@@ -44,39 +44,6 @@ h1{
     text-align: center;
     color: goldenrod;
     margin: auto;
-}
-
-#imagens > img{
-    padding-top: 100px;
-    padding-bottom: 30px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    width: 100px;
-}
-
-.imagens{
-    display: flex;
-    justify-content: space-evenly;
-    width: 400px;
-    margin: auto;
-}
-
-.imagens img:hover{
-    transition: all 0.7s;
-    transform: scale(1.15);
-    filter: saturate(101%);
-
-}
-
-div.imagens img{
-    filter: grayscale(200%);
-    transition: all(0.7s);
-    width: 60px;
-}
-
-#link{
-    display: inline-block;
 }
 
 a{
