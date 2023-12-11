@@ -28,12 +28,13 @@ body{
 }
 
 div.text{
+    border-style: outset;
     color: white;
     background-color: transparent;
     backdrop-filter: blur(5px);
     padding: 30px;
     border-radius: 10px;
-    border: solid 1px goldenrod;
+    border-color: goldenrod;
     margin: auto;
     width: 300px;
     text-align: center;
