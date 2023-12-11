@@ -47,6 +47,7 @@ h1{
 }
 
 #imagens > img{
+    border-radius: 50%;
     padding-top: 100px;
     padding-bottom: 30px;
     margin: auto;
