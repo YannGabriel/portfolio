@@ -65,7 +65,7 @@ a:hover{
 }
 
 #imagens-s img{
-    width: 250px;
+    width: 350px;
     filter: grayscale(100%);
     border-radius: 10px;
 }
