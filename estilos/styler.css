@@ -18,13 +18,15 @@
     src: url(../fontes/Roboto-Regular.ttf);
 }
 
-body{
+html, body{
     text-align: center;
     width: 400px;
     margin: auto;
 }
 
 header{
+    display: flex;
+    margin: auto;
     border-radius: 0px 0px 30px 30px;
     margin-bottom: 30px;
     width: 100%;
@@ -40,6 +42,9 @@ header h1{
 }
 
 header img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
     width: 60px;
     height: 40px;
 }
@@ -60,6 +65,7 @@ h1{
 }
 
 #linguagens img{
+    filter: grayscale(100%);
     width: 100px;
     height: 100px;
 }
@@ -83,4 +89,16 @@ h2{
 
 #start img{
     display: none;
+}
+
+#Projetos h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#Projetos h3{
+    font-size: 1.2rem;
+    font-family: 'titles';
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
