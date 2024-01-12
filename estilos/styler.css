@@ -104,6 +104,10 @@ h2{
 }
 
 iframe{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin-top: 15px;
+    margin-bottom: 15px;
     display: flex;
     margin: auto;
     justify-content: center;
