@@ -3,32 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/stylep.css" media="screen and (orientation: landscape)">
+    <link rel="stylesheet" href="estilos/styler.css" media="screen and (orientation: portrait)">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/">
     <title>Yann Gabriel</title>
+    <style>
+        
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+    </style>
 </head>
 <body>   
-    <div id="all">
-        <div id="imagens">
-            <img src="imagens/favicon.png">
-        </div>
-        <div>            
-            <div class="text">
-            <p>Olá! Me chamo <div id="color"><strong>Yann Gabriel</strong></div>, tenho 18 anos e sou um <div id="color">desenvolvedor front-end</div>. Aqui, você poderá visualizar os sites nos quais já <div id="color">trabalhei</div> como também<div id="cor">encontrar minhas redes de contato</div> e <div id="color">explorar meu portfólio</div> no GitHub. Sinta-se à vontade para <div id="color">solicitar um orçamento</div> ou descobrir mais sobre minha formação, entre outros detalhes!<br><div id="color" style="padding-top: 15px; padding-bottom: 0px;"></div></p>
-            <div id="link">
-                <a href="sites.html">Clique aqui e veja meus projetos!</a>
+    <div id="container-top">
+        <header>
+            <h1 style="float: left;">Yann Gabriel</h1>
+            <img src="imagens/logo-black.png">
+            <nav id="bar" style="float: right;">
+                <ul>
+                    <li><a>Sobre mim</a></li>
+                    <li><a>Projetos</a></li>
+                    <li><a>Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div id="into-me-pht">
+        <section>
+            <img src="imagens/pfp.png">
+            <div class="texto-1">
+                <h1>Olá, Mundo!</h1>
+                <p>
+                    Seja bem-vindo ao meu portifólio!
+                    <br>
+                    Me chamo Yann Gabriel, e aqui você encontrará
+                    <br>
+                    um resumo breve sobre mim, meus trabalhos e formas de contato!
+                    <br>
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <main>
+        <div id="linguagens">
+            <div id="imagens">
+                <img src="imagens/html.png">
+                <img src="imagens/css.png">
             </div>
         </div>
-    </div>
-</div>
 
-    <br><br>
+        <hr>
+        <br>
+        <br>
 
-    <div class="imagens">
-        <a href="https://github.com/yanngabriel/" target="_blank"><img src="imagens/github.png"></a>
-        <a href="https://instagram.com/yanngb_dev/" target="_blank"><img src="imagens/instagram.png"></a>
-        <a href="https://wa.me/5511946263200" target="_blank"><img src="imagens/whatsapp.png" target="_blank"></a>
-        <a href="https://x.com/azyruz7" target="_blank"><img src="imagens/twitter.png"></a>
-    </div>
+        <div id="about" class="sobre-mim">
+            <section id="start">
+                <h2>Sobre mim</h2>
+                <div class="about-t" id="part1">
+                    <p class="right">
+                        Me chamo Yann Gabriel,<br>
+                        moro no Estado de São Paulo<br>
+                        e sou apaixoando por programação desde<br>
+                        meus 6 anos de idade!<br>
+                    </p>
+                    <img src="imagens/spider-man-across-the-spider-verse-logo-wallpaper-2560x1920_27.jpg" class="left">
+                </div>
+
+                <div class="about-t" id="part2">
+                    <p class="left">
+                        Essa história toda se iniciou quando<br>
+                        eu ia visitar meu avô,<br>
+                        sempre jogavamos juntos e, <br>
+                        desde lá, criei minha paixão em programar, seja<br>
+                        um site, jogo ou aplicativo!
+                    </p>
+                    <img src="imagens/spider-man-across-the-spider-verse-logo-wallpaper-2560x1920_27.jpg" class="right">
+                </div>
+
+            </section>
+        </div>
+    </main>
 </body>
 </html>
