@@ -104,14 +104,13 @@ h2{
 }
 
 iframe{
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow-x: scroll;
     margin-top: 15px;
     margin-bottom: 15px;
     display: flex;
     margin: auto;
     justify-content: center;
     border-radius: 10px;
-    width: 390px;
+    width: 398px;
     height: 650px;
 }
