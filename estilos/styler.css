@@ -102,7 +102,7 @@ header{
 }
 
 a{
-    color: white;
+    color: var(--text-color);
     font-family: 'text';
     text-decoration: none;
 }
@@ -136,7 +136,7 @@ h1{
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    border: solid 0.8px white;
+    border: solid 1px var(--text-color);
     display: flex;
     justify-content: center;
     margin: auto;
@@ -149,6 +149,7 @@ h1{
 }
 
 p{
+    color: var(--text-color);
     font-family: 'text';
     width: 390px;
 }
@@ -161,6 +162,7 @@ hr{
 }
 
 h2{
+    color: var(--text-color);
     font-family: 'titles';
     margin-bottom: 10px;
 }
