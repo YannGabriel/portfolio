@@ -33,6 +33,12 @@ header{
     background-color: rgba(91, 91, 91, 0.483);
 }
 
+a{
+    color: white;
+    font-family: 'text';
+    text-decoration: none;
+}
+
 ul{
     display: none;
 }
@@ -113,4 +119,13 @@ iframe{
     border-radius: 20px;
     width: 390px;
     height: 650px;
+}
+
+#contatos img{
+    filter: grayscale(100%);
+
+}
+
+h4{
+    font-family: 'titles';
 }
