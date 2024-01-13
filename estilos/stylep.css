@@ -86,10 +86,6 @@
     src: url(../fontes/Roboto-Regular.ttf);
 }
 
-#dmodes{
-    display: none;
-}
-
 body{
     overflow-x: hidden;
     width: 100%;
@@ -104,13 +100,9 @@ header{
     border: solid 1px var(--text-color);
 }
 
-header img#icon{
-    position: absolute;
-    left: 90%;
-    top: 3%;
-    width: 100px;
-    height: 100px;
-    float: right;
+#icon{
+    display: flex;
+    margin: auto;
 }
 
 header img#logo{
