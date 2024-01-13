@@ -28,6 +28,10 @@
         </header>
     </div>
 
+    <div id="dmodes" class="animation-t-c">
+        <img src="imagens/light-mode.png" class="trade" id="icon">
+    </div>
+
     <div id="into-me-pht">
         <section>
             <img src="imagens/pfp.png" class="animation-r-c">
@@ -298,5 +302,20 @@
                     </section>
                 </div>
     </main>
+
+    <script>
+
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("light-theme");
+            if(document.body.classList.contains("light-theme")){
+                icon.src = "imagens/dark-mode.png";
+            }else{
+                icon.src = "imagens/light-mode.png";
+            }
+        }
+
+    </script>
 </body>
 </html>

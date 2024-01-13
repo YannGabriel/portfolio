@@ -3,6 +3,16 @@
     padding: 0;
 }
 
+:root{
+    --bckg-color: #000000;
+    --text-color: #fff;
+}
+
+.light-theme{
+    --bckg-color: #fff;
+    --text-color: #000000;
+}
+
 @keyframes slide-u{
     from{
         transform: translateY(400px);
@@ -111,6 +121,10 @@ header img{
     margin: auto;
     width: 60px;
     height: 40px;
+}
+
+.trade{
+    cursor: pointer;
 }
 
 h1{

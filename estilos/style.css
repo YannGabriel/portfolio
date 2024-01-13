@@ -4,9 +4,18 @@ html, body{
     background-color: black;
 }
 
+.light-theme{
+    background-color: white;
+    color: black;
+}
+
 img{
     width: 100px;
     height: 100px;
+}
+
+.trade{
+    cursor: pointer;
 }
 
 iframe{
