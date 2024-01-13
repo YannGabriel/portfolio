@@ -4,6 +4,11 @@ html, body{
     background-color: black;
 }
 
+img{
+    width: 100px;
+    height: 100px;
+}
+
 iframe{
     margin-top: 15px;
     margin-bottom: 15px;
