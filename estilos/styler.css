@@ -24,6 +24,43 @@
     }
 }
 
+@keyframes slide-r {
+    from{
+        transform: translateX(-400px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+    
+}
+
+@keyframes slide-l {
+    from{
+        transform: translateX(400px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+.animation-u-c{
+    animation: slide-u 1.2s ease-in;
+}
+
+.animation-t-c{
+    animation: slide-t 1.2s ease-in;
+}
+
+.animation-r-c{
+    animation: slide-r 1.1s ease-in;
+}
+
+.animation-l-c{
+    animation: slide-l 1.1s ease-in;
+}
+
 @font-face {
     font-family: 'nav';
     src: url(../fontes/cool.otf);
@@ -46,13 +83,6 @@ html, body{
 }
 
 header{
-    animation-fill-mode: both;
-    animation-iteration-count: 1;
-    animation-name: slide-t;
-    animation-duration: 1.2s;
-    animation-timing-function: ease-in;
-    animation-delay: 1s;
-    animation-direction: normal;
     display: flex;
     margin: auto;
     border-radius: 0px 0px 30px 30px;
@@ -98,37 +128,10 @@ h1{
     margin: auto;
 }
 
-#into-me-pht{
-    animation-fill-mode: both;
-    animation-iteration-count: 1;
-    animation-name: slide-u;
-    animation-duration: 1.2s;
-    animation-timing-function: ease-in;
-    animation-delay: 1s;
-    animation-direction: normal;
-}
-
 #linguagens img{
-    animation-fill-mode: both;
-    animation-iteration-count: 1;
-    animation-name: slide-u;
-    animation-duration: 1.2s;
-    animation-timing-function: ease-in;
-    animation-delay: 1s;
-    animation-direction: normal;
     filter: grayscale(100%);
     width: 100px;
     height: 100px;
-}
-
-main{
-    animation-fill-mode: both;
-    animation-iteration-count: 1;
-    animation-name: slide-u;
-    animation-duration: 1.2s;
-    animation-timing-function: ease-in;
-    animation-delay: 1s;
-    animation-direction: normal;
 }
 
 p{
