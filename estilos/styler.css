@@ -124,6 +124,10 @@ header img{
     height: 40px;
 }
 
+header img#icon{
+    display: none;
+}
+
 .trade{
     cursor: pointer;
 }
