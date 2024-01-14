@@ -197,6 +197,13 @@ iframe{
     height: 650px;
 }
 
+#contatos{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 #contatos img{
     filter: grayscale(100%);
 
