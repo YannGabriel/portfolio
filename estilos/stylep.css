@@ -256,6 +256,7 @@ a{
 }
 
 a:hover{
+    transition: all 0.5s;
     color: grey;
 }
 
@@ -264,3 +265,6 @@ a:hover{
     margin: auto;
 }
     
+#contatos h3{
+    font-size: 20px;
+}
