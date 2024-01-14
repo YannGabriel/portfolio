@@ -137,12 +137,20 @@ nav a{
 
 }
 
-div#into-me-pht img{
+div#into-me-pht{
+
+    height: 400px;
+    justify-content: center;
+    display: flex;
+    width: 1000px;
+    margin: auto;
+}
+
+div#into-me-pht img{ 
+    display: inline-block;
     border: 2px solid var(--text-color);
+    margin-top: 40px;
     margin-right: 5px;
-    position: absolute;
-    top: 25%;
-    left: 25%;
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -155,15 +163,15 @@ div#into-me-pht h1{
 }
 
 .texto-1{
+    transform: translateY(-40px);
+    width: 400px;
+    margin-left: 50px;
+    display: inline-block;
     font-family: 'Fjalla One', sans-serif;
     font-size: 22px;
-    position: absolute;
-    left: 45.5%;
-    top: 32%;
 }
 
 main{
-    padding-top: 55vh;
     width: 1200px;
     margin: auto;
 }
