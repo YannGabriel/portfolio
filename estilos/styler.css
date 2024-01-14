@@ -86,10 +86,10 @@
     src: url(../fontes/Roboto-Regular.ttf);
 }
 
-body{
+html, body{
     align-items: center;
     text-align: center;
-    width: 420px;
+    width: 100%;
     margin: auto;
 }
 
