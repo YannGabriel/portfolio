@@ -106,6 +106,7 @@ header{
 }
 
 header img#logo{
+    display: none;
     width: 100px;
     height: 60px;
     position: absolute;
@@ -185,7 +186,7 @@ main{
     filter: saturate(110%);
 }
 
-h2{
+h2, h3, h4, h5{
     text-align: center;
     font-family: 'titles';
 }
@@ -200,6 +201,42 @@ hr{
     width: 90%;
 }
 
+#about{
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#part-1 img, p{
+    display: inline-block;
+}
+
+#part-1 img{
+    width: 390px;
+}
+
+p.right{
+    margin: 20px 200px 50px 0px;
+    text-align: center;
+    width: 500px;
+}
+
+p.left{
+    text-align: center;
+    width: 500px;
+    margin: 20px 0px 50px 200px
+}
+
+#Projetos{
+    text-align: center;
+    margin: auto;
+}
+
+#Projetos p{
+    margin: 20px 0px 20px 0px;
+}
+
 iframe{
     border: none;
     margin-top: 15px;
@@ -210,5 +247,20 @@ iframe{
     border-radius: 20px;
     width: 750px;
     height: 650px;
+}
+
+a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: 'titles';
+}
+
+a:hover{
+    color: grey;
+}
+
+#contatos{
+    text-align: center;
+    margin: auto;
 }
     

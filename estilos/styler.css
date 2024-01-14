@@ -152,7 +152,7 @@ h1{
 p{
     margin: auto;
     color: var(--text-color);
-    font-family: 'text';
+    font-family: 'Fjalla One', sans-serif;
     width: 400px;
 }
 
