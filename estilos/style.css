@@ -9,11 +9,6 @@ html, body{
     color: black;
 }
 
-img{
-    width: 100px;
-    height: 100px;
-}
-
 .trade{
     cursor: pointer;
 }
@@ -31,4 +26,9 @@ iframe{
 
 #contatos{
     width: 400px;
+}
+
+#contatos img{
+    width: 100px;
+    height: 100px;
 }
