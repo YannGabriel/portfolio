@@ -119,13 +119,11 @@ header img#logo{
 }
 
 header nav{
-    position: absolute;
-    top: 5%;
-    left: 40%;
-    color: var(--text-color);
-    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 45px;
 }
-
 
 ul{
     list-style-type: none;
