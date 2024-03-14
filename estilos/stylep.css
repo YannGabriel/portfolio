@@ -4,13 +4,17 @@
 }
 
 :root{
-    --bckg-color: #000000;
-    --text-color: #fff;
+    --bckg-color: #0e0e0e;
+    --text-color: #ececec;
+    --p-color: #878787;
+    --details: #F16529;
 }
 
 .light-theme{
-    --bckg-color: #fff;
-    --text-color: #000000;
+    --bckg-color: #dbdbdb;
+    --text-color: #0e0e0e;
+    --p-color: #0e0e0e;
+    --details: #e76e3b;
 }
 
 @keyframes slide-u{
@@ -87,60 +91,89 @@
 }
 
 body{
+    color: var(--text-color);
     overflow-x: hidden;
     width: 100%;
     margin: auto;
 }
 
 header{
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    border-radius: 0px 0px 20px 20px;
-    width: 100%;
     height: 100px;
-    background-color: transparent;
-    border: solid 1px var(--text-color);
 }
 
-#icon{
-    justify-content: center;
+header h1{
+    padding: 26px;
+    font-family: 'titles';
     display: flex;
-    margin: auto;
+    float: left;
 }
 
 header img#logo{
     display: none;
-    width: 100px;
-    height: 60px;
-    position: absolute;
-    top: 3%;
-    left: 6%;
 }
 
-header nav{
-    align-items: center;
-    text-align: center;
+nav#bar{
     justify-content: space-between;
-    margin-top: 45px;
-}
-
-ul{
-    list-style-type: none;
+    display: flex;
+    float: right;
 }
 
 li{
+    padding: 30px 10px 0px 10px;
     display: inline-block;
 }
 
-nav a{
-    font-family: 'nav';
-    padding: 20px;
+a.top-a:hover{
+    color: var(--details);
+    transition: all .8s;
+}
 
+ul{
+    list-style: none;
+}
+
+#icon{
+    float: right;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+}
+
+h1#text-span-top{
+    font-size: 50px;
+    letter-spacing: 1.25px;
+    text-align: center;
+    padding: 20px;
+    font-family: 'titles';
+}
+
+strong{
+    color: var(--text-color);
+}
+
+p#start-of-me-class-top-middle{
+    color: var(--p-color);
+    padding: 20px 0px 20px 0px;
+    letter-spacing: 1.2px;
+    font-size: 24px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    display: block;
+}
+
+span#arrow{
+    color: var(--details);
+    font-family: 'titles';
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(90deg);
+    transition: all 1.2s;
 }
 
 div#into-me-pht{
-
     height: 400px;
     justify-content: center;
     display: flex;

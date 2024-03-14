@@ -16,19 +16,37 @@
 <body>   
     <div id="container-top" class="animation-t-c">
         <header>
-            <img src="imagens/logo-black.png" id="logo">
+            <h1 class="name-top-left"><span id="o">Y</span>ANN GABRIEL<span id="o">.</span></h1>
+
+            <br>
+
             <nav id="bar">
                 <ul>
-                    <li><a href="#about">Sobre mim</a></li>
-                    <li><a href="#Projetos">Projetos</a></li>
-                    <li><a href="#contatos">Contato</a></li>
+                    <li><a href="#about" class="top-a">Sobre mim</a></li>
+                    <li><a href="#Projetos" class="top-a">Projetos</a></li>
+                    <li><a href="#contatos" class="top-a">Contato</a></li>
                 </ul>
+                <img src="imagens/light-mode.png" class="trade" class="animation-t-c" id="icon" style="width: 100px; height: 100px;">
             </nav>
         </header>
     </div>
 
-    <div id="dmodes" class="animation-t-c">
-        <img src="imagens/light-mode.png" class="trade" id="icon" style="width: 100px; height: 100px;">
+    <br><br><br><br><br>
+
+    <div class="start-me-1st-css">
+        <h1 id="text-span-top" class="animation-r-c">Olá<span id="o">,</span> Mundo<span id="o">!</span></h1>
+        <br>
+        <p id="start-of-me-class-top-middle" class="animation-l-c">
+            Me chamo <strong>Yann Gabiel</strong> e sou um Desenvolvedor Web e um Analista e Dsenvolvidor de sistemas.
+            <br>
+            Focdo sempe em aprendizado, com novas linguagens e modelos,
+            <br>
+            Veja mais no meu portfólio<span id="o">!</span>
+        </p>
+
+        <br><br><br><br>
+
+        <span id="arrow" class="animation-u-c">></span>
     </div>
 
     <div id="into-me-pht">
@@ -368,19 +386,7 @@
                 </div>
     </main>
 
-    <script>
-
-        var icon = document.getElementById("icon");
-
-        icon.onclick = function(){
-            document.body.classList.toggle("light-theme");
-            if(document.body.classList.contains("light-theme")){
-                icon.src = "imagens/dark-mode.png";
-            }else{
-                icon.src = "imagens/light-mode.png";
-            }
-        }
-
+    <script src="javascript/index.js">
     </script>
 
 </body>
