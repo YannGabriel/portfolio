@@ -44,6 +44,10 @@ iframe{
     width: 400px;
 }
 
+hr{
+    color: var(--details);
+}
+
 #contatos img{
     width: 100px;
     height: 100px;
