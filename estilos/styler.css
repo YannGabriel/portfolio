@@ -170,6 +170,10 @@ a#btn-return{
     bottom: 10px;
 }
 
+img #image-pc{
+    display: none;
+}
+
 #into-me-pht img{
     width: 250px;
     height: 250px;

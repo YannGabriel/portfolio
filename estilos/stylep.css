@@ -181,11 +181,17 @@ span#arrow{
 a#btn-return{
     color: var(--text-color);
     background-color: var(--details);
-    padding: 30px;
-    border-radius: 50%;
+    padding: 24px;
+    border-radius: 30px;
     position: fixed;
     right: 50px;
     bottom: 25px;
+}
+
+a#btn-return:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px var(--p-color);
+    transition: all 0.5s;
 }
 
 div#into-me-pht{
@@ -194,6 +200,10 @@ div#into-me-pht{
     display: flex;
     width: 1000px;
     margin: auto;
+}
+
+#img-cellphone{
+    display: none;
 }
 
 div#into-me-pht img{ 
@@ -207,23 +217,20 @@ div#into-me-pht img{
 }
 
 div#into-me-pht h1{
+    text-align: end;
     color: var(--text-color);
     font-family: 'titles';
     font-size: 55px;
 }
 
 .texto-1{
+    text-align: end;
     transform: translateY(-40px);
     width: 400px;
-    margin-left: 50px;
+    margin-right: 50px;
     display: inline-block;
     font-family: 'Fjalla One', sans-serif;
     font-size: 22px;
-}
-
-main{
-    width: 1200px;
-    margin: auto;
 }
 
 #linguagens{
@@ -244,9 +251,24 @@ main{
     filter: saturate(110%);
 }
 
-h2, h3, h4, h5{
+main{
+    width: 1200px;
+    margin: auto;
+}
+
+h2{
     text-align: center;
     font-family: 'titles';
+}
+
+h3, h4, h5{
+    font-family: 'titles';
+}
+
+h3.project-title{
+    font-size: 28px;
+    letter-spacing: 1px;
+    padding: 15px 0px 10px 0px;
 }
 
 p{
@@ -254,44 +276,30 @@ p{
     font-size: 22px;
 }
 
-#about{
-    width: 900px;
+.project-about{
+    font-size: 34px;
+    text-align: center;
+    padding: 20px;
+}
+
+.projects{
+    width: 950px;
+    margin: auto;
     display: flex;
     justify-content: center;
-    margin: auto;
 }
 
-#about img{
-    width: 250px;
-    height: 175px;
-    border-radius: 5px;
-    border: 0.5px grey solid;
+.img-projects{  
     display: inline-block;
-}
-
-#part-1 img, p{
-    display: inline-block;
-}
-
-p.right{
-    margin: 20px 100px 50px 0px;
-    text-align: center;
     width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    margin-bottom: 300px;
 }
 
-p.left{
-    text-align: center;
+.projects p{
+    display: inline-block;
     width: 500px;
-    margin: 20px 0px 50px 100px
-}
-
-#Projetos{
-    text-align: center;
-    margin: auto;
-}
-
-#Projetos p{
-    margin: 20px 0px 20px 0px;
 }
 
 iframe{
