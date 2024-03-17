@@ -164,7 +164,7 @@ a#btn-return{
     color: var(--text-color);
     background-color: var(--details);
     padding: 16px;
-    border-radius: 50%;
+    border-radius: 30px;
     position: fixed;
     right: 20px;
     bottom: 10px;
