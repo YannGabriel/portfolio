@@ -129,14 +129,6 @@ h1.name-top-left{
     font-family: 'titles';
 }
 
-h1#text-span-top{
-    font-size: 50px;
-    letter-spacing: 1.25px;
-    text-align: center;
-    padding: 20px;
-    font-family: 'titles';
-}
-
 p#start-of-me-class-top-middle{
     color: var(--p-color);
     padding: 12px 0px 20px 0px;
@@ -147,6 +139,7 @@ p#start-of-me-class-top-middle{
     text-align: center;
     justify-content: center;
     display: block;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 strong{
@@ -163,6 +156,20 @@ span#arrow{
     transition: all 1.2s;
 }
 
+.all-of-me{
+    height: 100vh;
+}
+
+a#btn-return{
+    color: var(--text-color);
+    background-color: var(--details);
+    padding: 16px;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+}
+
 #into-me-pht img{
     width: 250px;
     height: 250px;
@@ -173,34 +180,44 @@ span#arrow{
     margin: auto;
 }
 
-#linguagens img{
-    filter: grayscale(100%);
-    width: 100px;
-    height: 100px;
+h1{
+    font-size: 50px;
+    letter-spacing: 1.25px;
+    text-align: center;
+    padding: 20px;
+    font-family: 'titles';
 }
 
-p{
+#into-me-pht p{
+    padding: 30px;
+    font-size: 1.2rem;
     margin: auto;
     color: var(--p-color);
     font-family: 'Fjalla One', sans-serif;
     width: 400px;
 }
 
-hr{
-    width: 380px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
+#linguagens img{
+    filter: grayscale(100%);
+    width: 100px;
+    height: 100px;
+}
+
+#into-me-pht i{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: var(--details);
+    border-radius: 50%;
+    color: white;
+    top: 95%;
+    left: 90%;
 }
 
 h2{
     color: var(--text-color);
     font-family: 'titles';
     margin-bottom: 10px;
-}
-
-#start img{
-    display: none;
 }
 
 #Projetos h2{

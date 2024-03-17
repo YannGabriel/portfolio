@@ -173,6 +173,21 @@ span#arrow{
     transition: all 1.2s;
 }
 
+.all-of-me{
+    height: 100vh;
+}
+
+
+a#btn-return{
+    color: var(--text-color);
+    background-color: var(--details);
+    padding: 30px;
+    border-radius: 50%;
+    position: fixed;
+    right: 50px;
+    bottom: 25px;
+}
+
 div#into-me-pht{
     height: 400px;
     justify-content: center;
