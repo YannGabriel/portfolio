@@ -302,6 +302,22 @@ p{
     width: 500px;
 }
 
+.img-for-tecs{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+#icon-for-view{
+    display: inline-block;
+}
+
+.img-for-button{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
 iframe{
     border: none;
     margin-top: 15px;
