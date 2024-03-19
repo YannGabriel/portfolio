@@ -115,7 +115,6 @@ ul{
     display: none;
 }
 
-
 #icon{
     float: right;
     cursor: pointer;
@@ -147,6 +146,7 @@ strong{
 }
 
 .contact-img{
+    cursor: pointer;
     padding: 2% 0%;
     width: 150px;
     margin: auto;

@@ -165,6 +165,7 @@ p#start-of-me-class-top-middle{
 }
 
 .contact-img{
+    cursor: pointer;
     padding: 2% 0%;
     width: 150px;
     margin: auto;
