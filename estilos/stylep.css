@@ -151,13 +151,10 @@ h1#text-span-top{
     font-family: 'titles';
 }
 
-strong{
-    color: var(--text-color);
-}
-
 p#start-of-me-class-top-middle{
+    line-height: 1.8rem;
     padding-top: 7%;
-    color: var(--p-color);
+    color: var(--text-color);
     padding: 20px 0px 20px 0px;
     letter-spacing: 1.2px;
     font-size: 24px;
