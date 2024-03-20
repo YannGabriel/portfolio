@@ -97,6 +97,10 @@ body{
     margin: auto;
 }
 
+#cll{
+    display: none;
+}
+
 header{
     height: 100px;
 }
@@ -312,9 +316,29 @@ p{
     margin-bottom: 300px;
 }
 
-.projects p{
+img#portfolio-img{
+    float: right;
+}
+
+.projects p#pc{
     display: inline-block;
     width: 500px;
+}
+
+#port{
+    margin-left: 30px;
+    float: right; 
+    text-align: left;
+}
+
+#cm{
+    margin-right: 30px;
+    float: left; 
+    text-align: right;
+}
+
+.project-image{
+    float: right;
 }
 
 .img-for-tecs{
@@ -328,18 +352,17 @@ p{
 }
 
 .img-for-button{
-    width: 20px;
-    height: 20px;
-    display: inline-block;
+    width: 30px;
+    height: 30px;
 }
 
-button.code-target{
+button#target{
+    justify-content: space-between;
     letter-spacing: 1.25px;
     width: 200px;
     font-family: 'titles', sans-serif;
     border-radius: 10px;
     border: none;
-    box-shadow: 0px 0px 20px #99999967;
     padding: 10px;
     background-color: var(--details);
     color: var(--bckg-color);
@@ -347,16 +370,10 @@ button.code-target{
     cursor: pointer;
 }
 
-iframe{
-    border: none;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    border-radius: 20px;
-    width: 750px;
-    height: 650px;
+button#target:hover{
+    transform: scale(1.01);
+    transition: all .6s;
+    box-shadow: 0px 0px 20px #99999967;
 }
 
 a{
@@ -370,11 +387,6 @@ a:hover{
     color: grey;
 }
 
-#contatos{
-    text-align: center;
-    margin: auto;
-}
-    
-#contatos h3{
-    font-size: 20px;
+br#cll{
+    display: none;
 }
