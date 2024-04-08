@@ -90,6 +90,10 @@
     src: url(../fontes/Roboto-Regular.ttf);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     color: var(--text-color);
     overflow-x: hidden;
