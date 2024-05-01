@@ -54,6 +54,21 @@ hr{
     height: 100px;
 }
 
+.linguagens{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:  50px;
+}
+
+.linguagens img{
+    margin: auto;
+}
+
+.imagens{
+    width: 350px;
+    margin: auto;
+}
+
 @media (max-width: 1199px) {
     *{
         margin: 0;
@@ -285,13 +300,6 @@ hr{
         color: var(--text-color);
         font-family: 'Fjalla One', sans-serif;
         width: 400px;
-    }
-    
-    #linguagens{
-        width: 300px;
-        display: flex;
-        justify-content: space-between;
-        margin: auto;
     }
     
     #language{
