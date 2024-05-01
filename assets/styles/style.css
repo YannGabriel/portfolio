@@ -334,7 +334,7 @@ hr{
     .projects p{
         margin: auto;
         font-family: 'Fjalla One', sans-serif;
-        width: 350px;
+        width: 300px;
         letter-spacing: 0.5px;
         padding: 4px;
     }
@@ -350,7 +350,6 @@ hr{
         height: 30px;
         display: inline-block;
     }
-    
     
     .img-for-button{
         width: 20px;
@@ -707,6 +706,11 @@ hr{
         width: 500px;
     }
     
+    .text-project{
+        width: 90%;
+        text-align: center;
+    }
+
     #port{
         margin-left: 30px;
         float: right; 
