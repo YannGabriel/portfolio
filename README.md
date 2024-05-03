@@ -24,14 +24,15 @@ Essas foram as tecnologias que utilizei ao decorrer do projeto:
 * Animações JS ✅
 ## Veja o website de forma finalizada e estruturada:
 
-_**<a href="https://yanngabriel.github.io/portfolio/"><button style="letter-spacing: 1.25px;
+_**<button style="letter-spacing: 1.25px;
         margin: auto;
         border-radius: 10px;
         border: none;
         padding: 10px;
         background-color: #F16529 ;
         font-size: 20px;
-        cursor: pointer;"><h1>Veja meu portfolio!</h1></button></a>**_
+        cursor: pointer;"><a href="https://yanngabriel.github.io/portfolio/">
+        <h1>Veja meu portfolio!</h1></a></button>**_
 
 
 ## Contato
