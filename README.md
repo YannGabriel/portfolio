@@ -25,21 +25,13 @@ Essas foram as tecnologias que utilizei ao decorrer do projeto:
 
 ## Veja o website de forma finalizada e estruturada:
 
-<a href="https://yanngabriel.github.io/portfolio/" style="letter-spacing: 1.25px;
-        margin: auto;
-        border-radius: 10px;
-        border: none;
-        padding: 10px;
-        background-color: #F16529 ;
-        font-size: 20px;
-        cursor: pointer;">
-        <h1>Veja meu portfolio!</h1></a>
+<a href="https://yanngabriel.github.io/portfolio/"><img src="assets/imagens/button-see.png"></a>
 
 
 ## Contato
 
 Me chame caso tenha gostado do meu trabalho e queira negociar!
 
-_**<a href="https://wa.me/11946263200"><img src="https://agenciavone.com.br/wp-content/uploads/2023/10/V-one-botao-whatsapp-versao-03.png" style="max-width: 400px"></a>**_
+_**<a href="https://wa.me/11946263200"><img src="https://agenciavone.com.br/wp-content/uploads/2023/10/V-one-botao-whatsapp-versao-03.png" style="max-width: 250px"></a>**_
 
 
