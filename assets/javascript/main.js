@@ -13,7 +13,7 @@ icon.onclick = function() {
     });
 
     if (document.body.classList.contains("light-theme")) {
-        icon.src = "assets/imagens/icons-images/dark-mode.png";
+        icon.src = "assets/imagens/icons-images/Dark-mode.png";
     } else {
         icon.src = "assets/imagens/icons-images/Light-MOde.png";
     }
