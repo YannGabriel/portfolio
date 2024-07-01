@@ -27,7 +27,9 @@
     div.link-images {
       width: 130px;
       padding-top: 10px;
-      margin: auto;
+      @media (width < 1200px){
+        margin: auto;
+      }
       a.link-image-target {
         text-decoration: none;
         img.link {

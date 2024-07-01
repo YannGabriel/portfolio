@@ -124,7 +124,11 @@ header.container-top #icon {
 .first-content .content-txt div.link-images {
   width: 130px;
   padding-top: 10px;
-  margin: auto;
+}
+@media (width < 1200px) {
+  .first-content .content-txt div.link-images {
+    margin: auto;
+  }
 }
 .first-content .content-txt div.link-images a.link-image-target {
   text-decoration: none;
