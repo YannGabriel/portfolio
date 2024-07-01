@@ -1,0 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@import './components/colors';
+@import './components/all';
+@import './components/header';
+@import './components/first-content';
+
+

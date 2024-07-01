@@ -1,20 +1,20 @@
-
 var icon = document.getElementById("icon");
 
-icon.onclick = function(){
+icon.onclick = function() {
     document.body.classList.toggle("light-theme");
-    if(document.body.classList.contains("light-theme")){
-        icon.src = "./assets/imagens/dark-mode.png";
-    }else{
-        icon.src = "./assets/imagens/light-mode.png";
-    }
-}
+    
+    var images = document.querySelectorAll("img[data-light-src]");
+    images.forEach(function(image) {
+        if (document.body.classList.contains("light-theme")) {
+            image.src = image.getAttribute("data-light-src");
+        } else {
+            image.src = image.getAttribute("data-dark-src");
+        }
+    });
 
-
-function clickMenu(){
-    if(itens.style.display == 'block'){
-        itens.style.display = 'none'
-    }else{
-        itens.style.display = 'block'
+    if (document.body.classList.contains("light-theme")) {
+        icon.src = "assets/imagens/icons-images/dark-mode.png";
+    } else {
+        icon.src = "assets/imagens/icons-images/Light-MOde.png";
     }
 }

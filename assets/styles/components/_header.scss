@@ -1,0 +1,45 @@
+
+
+@import './colors';
+
+header.container-top{
+  background-color: var(--background-color);
+  color: var(--text-color);
+  height: 100px;
+  width: 100%;
+  nav.nav-bar{
+    width: 100%;
+    height: 100px;
+    align-content: center;
+    float: right;
+    padding-right: 5%;
+    ul.search-list{
+      float: inline-end;
+      width: 80%;
+      text-align: end;
+      list-style: none;
+      a.search-target{
+        padding-right: 2%;
+        text-decoration: none;
+        display: inline-block;
+        color: var(--text-color);
+      }
+    }
+  }
+  #icon{
+    cursor: pointer;
+    width: 20px;
+  }
+}
+
+@media (width <= 1200px){
+  header.container-top{
+    li.serach-item{
+      display: none;
+    }
+    #icon{
+      width: 40px;
+    }
+  }
+
+}

@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --background-color: #181924;
+  --text-color: #fff;
+  --details: #E4DEDE;
+  --cards: #373949;
+}
+
+.light-theme {
+  --background-color: #E4DEDE;
+  --text-color: #181924;
+}
+
+:root {
+  --background-color: #181924;
+  --text-color: #fff;
+  --details: #E4DEDE;
+  --cards: #373949;
+}
+
+.light-theme {
+  --background-color: #E4DEDE;
+  --text-color: #181924;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--background-color);
+}
+
+:root {
+  --background-color: #181924;
+  --text-color: #fff;
+  --details: #E4DEDE;
+  --cards: #373949;
+}
+
+.light-theme {
+  --background-color: #E4DEDE;
+  --text-color: #181924;
+}
+
+header.container-top {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  height: 100px;
+  width: 100%;
+}
+header.container-top nav.nav-bar {
+  width: 100%;
+  height: 100px;
+  align-content: center;
+  float: right;
+  padding-right: 5%;
+}
+header.container-top nav.nav-bar ul.search-list {
+  float: inline-end;
+  width: 80%;
+  text-align: end;
+  list-style: none;
+}
+header.container-top nav.nav-bar ul.search-list a.search-target {
+  padding-right: 2%;
+  text-decoration: none;
+  display: inline-block;
+  color: var(--text-color);
+}
+header.container-top #icon {
+  cursor: pointer;
+  width: 20px;
+}
+
+@media (width <= 1200px) {
+  header.container-top li.serach-item {
+    display: none;
+  }
+  header.container-top #icon {
+    width: 40px;
+  }
+}
+:root {
+  --background-color: #181924;
+  --text-color: #fff;
+  --details: #E4DEDE;
+  --cards: #373949;
+}
+
+.light-theme {
+  --background-color: #E4DEDE;
+  --text-color: #181924;
+}
+
+.first-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 80vh;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+}
+.first-content .content-txt {
+  margin: auto;
+  width: 500px;
+}
+.first-content .content-txt h1.wellcome,
+.first-content .content-txt h1.dev-name {
+  color: var(--text-color);
+}
+.first-content .content-txt h1.dev-name {
+  padding-top: 8px;
+  font-size: 3rem;
+}
+.first-content .content-txt p.start-txt {
+  padding: 7px;
+  font-size: 1.4rem;
+  color: var(--text-color);
+}
+.first-content .content-txt div.link-images {
+  width: 130px;
+  padding-top: 10px;
+  margin: auto;
+}
+.first-content .content-txt div.link-images a.link-image-target {
+  text-decoration: none;
+}
+.first-content .content-txt div.link-images a.link-image-target img.link {
+  width: 60px;
+}
+@media (width > 1200px) {
+  .first-content .image-dev {
+    margin: auto;
+  }
+}
+@media (width >= 760px) and (width <= 1200px) {
+  .first-content .image-dev {
+    margin-left: 25%;
+  }
+}
+
+@media (width <= 1200px) {
+  .first-content {
+    display: block;
+    text-align: center;
+  }
+  .first-content div.content-txt {
+    padding-top: 15%;
+  }
+  .first-content .image-dev {
+    width: 25%;
+  }
+}/*# sourceMappingURL=index.css.map */
