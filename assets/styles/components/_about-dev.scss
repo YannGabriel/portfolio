@@ -30,24 +30,28 @@
     }
   }
 
-  .about-dev-txt{
-    width: 70%;
-    @media(width >= 1200){
+}
+
+.about-dev-txt{
+  width: 70%;
+  @media (width < 760px){
+    text-align: center;
+    margin: auto;
+    padding-top: 10%;
+  }
+  color: var(--text-color);
+  h1.about-me{
+    @media(width > 760px){
       text-align: end;
     }
-    @media (width < 1200px){
-      text-align: center;
-      margin: auto;
-      padding-top: 10%;
-    }
-    color: var(--text-color);
-    h1.about-me{
-      font-size: 2.8rem;
-    }
-    p.more-about-dev{
-      font-size: 1.3rem;
-    }
+    font-size: 2.8rem;
   }
-  
+  p.more-about-dev{
+    @media(width > 760px){
+      text-align: end;
+    }
+    font-size: 1.3rem;
+  }
 }
+
 
