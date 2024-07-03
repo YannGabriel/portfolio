@@ -3,7 +3,7 @@
 .first-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 80vh;
+  height: 100vh;
   align-self: center;
   align-content: center;
   align-items: center;
@@ -15,11 +15,17 @@
       color: var(--text-color);
     }
     h1.dev-name {
+      color: #7AAABC;
       padding-top: 8px;
       font-size: 3rem;
     }
     p.start-txt {
-      padding: 7px;
+      @media (width <= 760px){
+        width: 390px;
+        text-align: center;
+        margin: auto;
+      }
+      padding-top: 7px;
       font-size: 1.4rem;
       color: var(--text-color);
     }
