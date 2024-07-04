@@ -213,7 +213,6 @@ header.container-top #icon {
 }
 
 .about-dev-txt {
-  width: 70%;
   color: var(--text-color);
 }
 @media (width < 760px) {
@@ -226,17 +225,30 @@ header.container-top #icon {
 .about-dev-txt h1.about-me {
   font-size: 2.8rem;
 }
-@media (width > 760px) {
+@media (width > 1000px) {
   .about-dev-txt h1.about-me {
     text-align: end;
+  }
+}
+@media (width <= 1000px) {
+  .about-dev-txt h1.about-me {
+    margin: auto;
+    text-align: center;
   }
 }
 .about-dev-txt p.more-about-dev {
   font-size: 1.3rem;
 }
-@media (width > 760px) {
+@media (width > 1000px) {
   .about-dev-txt p.more-about-dev {
     text-align: end;
+  }
+}
+@media (width <= 1000px) {
+  .about-dev-txt p.more-about-dev {
+    margin: auto;
+    text-align: center;
+    width: 80%;
   }
 }
 

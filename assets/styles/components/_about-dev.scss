@@ -33,7 +33,6 @@
 }
 
 .about-dev-txt{
-  width: 70%;
   @media (width < 760px){
     text-align: center;
     margin: auto;
@@ -41,15 +40,28 @@
   }
   color: var(--text-color);
   h1.about-me{
-    @media(width > 760px){
+    @media(width > 1000px){
       text-align: end;
     }
+
+    @media( width <= 1000px){
+      margin: auto;
+      text-align: center;
+    }
+
     font-size: 2.8rem;
   }
   p.more-about-dev{
-    @media(width > 760px){
+    @media(width > 1000px){
       text-align: end;
     }
+
+    @media(width <= 1000px){
+      margin: auto;
+      text-align: center;
+      width: 80%;
+    }
+
     font-size: 1.3rem;
   }
 }
