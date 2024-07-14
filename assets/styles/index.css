@@ -215,6 +215,12 @@ header.container-top #icon {
 .about-dev-txt {
   color: var(--text-color);
 }
+@media (width > 1000px) {
+  .about-dev-txt {
+    width: 80%;
+    margin: auto;
+  }
+}
 @media (width < 760px) {
   .about-dev-txt {
     text-align: center;
@@ -332,4 +338,106 @@ header.container-top #icon {
     width: 45px;
     margin-right: 5px;
   }
+}
+:root {
+  --background-color: #181924;
+  --text-color: #fff;
+  --details: #E4DEDE;
+  --cards: #373949;
+}
+
+.light-theme {
+  --background-color: #E4DEDE;
+  --text-color: #181924;
+  --cards: #bcbcbcdf;
+}
+
+.projects {
+  padding-top: 20px;
+}
+.projects h1.projects-title {
+  color: var(--text-color);
+  font-size: 2.4rem;
+  text-align: center;
+  margin: auto;
+}
+.projects p.about-latest-projects {
+  padding: 10px;
+  color: var(--text-color);
+  font-size: 1.6rem;
+  margin: auto;
+  text-align: center;
+}
+@media (width < 1000px) {
+  .projects p.about-latest-projects {
+    width: 80%;
+  }
+}
+@media (width >= 1000px) {
+  .projects .projects-view {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin: auto;
+    width: 1000px;
+  }
+}
+.projects .projects-view .big-projects {
+  padding-top: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.projects .projects-view .project-main {
+  width: 45%;
+  height: 300px;
+  background-color: var(--cards);
+  color: var(--text-color);
+}
+.projects .projects-view .project-main img.project-image {
+  width: 100%;
+  border-radius: 0px 0px 10px 10px;
+}
+.projects .projects-view .project-main h2.project-title {
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+}
+.projects .projects-view .project-main p.about-project {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.projects .projects-view .project-main .icons {
+  width: 100px;
+  justify-content: space-between;
+  display: flex;
+  margin: auto;
+}
+.projects .projects-view .project-main .icons a.target-link {
+  text-decoration: none;
+}
+.projects .projects-view .project-main .icons a.target-link img.icons-project {
+  width: 40px;
+}
+.projects .projects-view .sub-projects {
+  padding-top: 15%;
+}
+.projects .projects-view .sub-projects .project {
+  display: grid;
+  grid-template-columns: 120px 80%;
+  margin: auto;
+  background-color: var(--cards);
+  width: 90%;
+  height: 85px;
+}
+.projects .projects-view .sub-projects .project img.sub-image {
+  width: 100px;
+  height: 85px;
+}
+.projects .projects-view .sub-projects .project h2.project-title-sub {
+  height: 5px;
+  padding-bottom: 2%;
+  color: var(--text-color);
+}
+.projects .projects-view .sub-projects .project p.about-sub-project {
+  color: var(--text-color);
 }/*# sourceMappingURL=index.css.map */

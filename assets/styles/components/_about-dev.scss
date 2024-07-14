@@ -33,6 +33,10 @@
 }
 
 .about-dev-txt{
+  @media(width > 1000px){
+    width: 80%;
+    margin: auto;
+  }
   @media (width < 760px){
     text-align: center;
     margin: auto;
