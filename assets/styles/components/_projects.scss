@@ -88,6 +88,11 @@
         p.about-sub-project{
           color: var(--text-color);
         }
+        a.see-more{
+          text-decoration: none;
+          color: var(--text-color);
+          font-weight: bold;
+        }
       }
     }
   }

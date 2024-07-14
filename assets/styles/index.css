@@ -6,6 +6,24 @@
   font-family: "Open Sans", sans-serif;
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 3px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--cards);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--text-color);
+  border-radius: 20px;
+  border: none;
+}
+
 :root {
   --background-color: #181924;
   --text-color: #fff;
@@ -440,4 +458,9 @@ header.container-top #icon {
 }
 .projects .projects-view .sub-projects .project p.about-sub-project {
   color: var(--text-color);
+}
+.projects .projects-view .sub-projects .project a.see-more {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
 }/*# sourceMappingURL=index.css.map */

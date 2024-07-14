@@ -14,13 +14,13 @@
     <header class="container-top">
       <nav class="nav-bar">
         <ul class="search-list">
-          <a href="" class="search-target">
+          <a href="#about-me" class="search-target">
             <li class="serach-item">About Me</li>
           </a>
-          <a href="" class="search-target">
+          <a href="#skills" class="search-target">
             <li class="serach-item">Skills</li>
           </a>
-          <a href="" class="search-target">
+          <a href="#projects" class="search-target">
             <li class="serach-item">Projects</li>
           </a>
           <a href="" class="search-target">
@@ -83,7 +83,7 @@
       </div>
     </section>
 
-    <section class="about-dev">
+    <section class="about-dev" id="about-me">
       <div class="dev-image-child">
         <img
           src="assets/imagens/dev-images/Child-Yann-dark.png"
@@ -102,7 +102,7 @@
       </div>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
       <h1 class="skills-behind">SKILLS</h1>
 
       <div class="boxes">
@@ -176,7 +176,7 @@
       </div>
     </section>
 
-    <main class="content-main">
+    <main class="content-main" id="projects">
       <section class="projects">
         <h1 class="projects-title">My Latest Projects</h1>
         <p class="about-latest-projects">
@@ -185,18 +185,17 @@
           I hope you enjoy them!
         </p>
         <div class="projects-view">
-
           <div class="big-projects">
-            <div class="project-main">
+            <div class="project-main" id="cafe-mania">
               <img
-                src="assets/imagens/projects-images/test.png.png"
+                src="assets/imagens/projects-images/cafe-mania.png"
                 alt=""
                 class="project-image"
               />
               <h2 class="project-title">Café Mania</h2>
               <p class="about-project">
-                Its a cafe menu, maded with HTML, SCSS and JS, this website has
-                animations.
+                In this website you can see about a cafe.
+                This website was made with HTML, SCSS and JS (for animations)
               </p>
               <div class="icons">
                 <a
@@ -210,7 +209,7 @@
                     class="icons-project"
                   />
                 </a>
-                <a href="" class="target-link">
+                <a href="https://github.com/YannGabriel/cafe-mania" target="_blank" class="target-link">
                   <img
                     src="assets/imagens/icons-images/Githb-dark.png"
                     alt=""
@@ -219,30 +218,86 @@
                 </a>
               </div>
             </div>
-            <div class="project-main"></div>
+
+            <div class="project-main" id="pokemon">
+              <img
+                src="assets/imagens/projects-images/pokemon.png"
+                alt=""
+                class="project-image"
+              />
+              <h2 class="project-title">Pokemon</h2>
+              <p class="about-project">
+                A website made with HTML, JS and SCSS.
+                In this website you can see a pokedex, made with PokeAPI
+              </p>
+              <div class="icons">
+                <a
+                  href="https://yanngabriel.github.io/pokemon"
+                  target="_blank"
+                  class="target-link"
+                >
+                  <img
+                    src="assets/imagens/icons-images/eye-project.png"
+                    alt=""
+                    class="icons-project"
+                  />
+                </a>
+                <a href="https://github.com/YannGabriel/pokemon" target="_blank" class="target-link">
+                  <img
+                    src="assets/imagens/icons-images/Githb-dark.png"
+                    alt=""
+                    class="icons-project"
+                  />
+                </a>
+              </div>
+            </div>
           </div>
 
           <div class="sub-projects">
-
             <div class="project">
-                <div class="sub-project-image">
-                    <img src="assets/imagens/projects-images/test-sub.png" alt="" class="sub-image">
+              <div class="sub-project-image">
+                <img src="assets/imagens/projects-images/tlou.png" class="sub-image">
                 </div>
                 <div class="sub-project-txt">
-                    <h2 class="project-title-sub">
-                        The Last of Us
-                    </h2>
-                    <br>
-                    <p class="about-sub-project">
-                        Land page about the last of us
-                    </p>
+                  <h2 class="project-title-sub">The Last of Us</h2>
+                  <br />
+                  <p class="about-sub-project">Land page about the last of us</p>
+                  <a href="https://yanngabriel.github.io/tlou" target="_blank" class="see-more">
+                    See more!
+                  </a>
                 </div>
             </div>
             <br />
-            <div class="project"></div>
+            <div class="project">
+              <div class="sub-project-image">
+                <img src="assets/imagens/projects-images/CMLOGO.png" class="sub-image">
+                </div>
+                <div class="sub-project-txt">
+                  <h2 class="project-title-sub">Culinaria Mista</h2>
+                  <br />
+                  <p class="about-sub-project">Menu for a cafe</p>
+                  <a href="https://yanngabriel.github.io/menu" target="_blank" class="see-more">
+                    See more!
+                  </a>
+                </div>
+            </div>
             <br />
-            <div class="project"></div>
+            <div class="project">
+              <div class="sub-project-image">
+                <img src="assets/imagens/projects-images/more.png" class="sub-image">
+                </div>
+                <div class="sub-project-txt">
+                  <h2 class="project-title-sub">More Projects</h2>
+                  <br />
+                  <p class="about-sub-project">Open my github to see more!</p>
+                  <a href="https://github.com/YannGabriel" target="_blank" class="see-more">
+                    See more!
+                  </a>
+                </div>
+            </div>
+          
           </div>
+        
         </div>
       </section>
     </main>

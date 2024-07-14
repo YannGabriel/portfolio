@@ -8,6 +8,25 @@
   font-family: "Open Sans", sans-serif;
 }
 
+html, body{
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 3px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--cards); 
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--text-color); 
+  border-radius: 20px; 
+  border: none; 
+}
+
+
 @import './components/colors';
 @import './components/all';
 @import './components/header';
