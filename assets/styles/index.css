@@ -519,4 +519,99 @@ header.container-top #icon {
   text-decoration: none;
   color: var(--text-color);
   font-weight: bold;
+}
+
+.contats {
+  padding-top: 7.5%;
+}
+.contats h1.contact-w-mw {
+  color: var(--text-color);
+  margin: auto;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.contats p.more-about-connect {
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  color: var(--text-color);
+}
+@media (width >= 1000px) {
+  .contats h1.contact-w-mw {
+    font-size: 2rem;
+    padding-bottom: 10px;
+  }
+  .contats p.more-about-connect {
+    width: 70%;
+    font-size: 1.8rem;
+    padding-bottom: 40px;
+  }
+  .contats .social-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1000px;
+    margin: auto;
+  }
+  .contats .social-links .media-line {
+    border-right: 0.25px solid rgba(255, 255, 255, 0.145);
+  }
+  .contats .social-links div.media {
+    width: 100%;
+    margin: auto;
+  }
+  .contats .social-links div.media img.contact-image {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .contats .social-links div.media p.about-media {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+  .contats .social-links div.media a.media-link {
+    color: var(--text-color);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.15rem;
+  }
+}
+@media (width < 1000px) {
+  .contats .social-links {
+    margin: auto;
+    width: 90%;
+  }
+  .contats .social-links .media-line {
+    border-bottom: 0.25px solid rgba(255, 255, 255, 0.143);
+  }
+  .contats .social-links div.media {
+    padding: 35px 0px 30px 0px;
+    width: 90%;
+    margin: auto;
+  }
+  .contats .social-links div.media img.contact-image {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  .contats .social-links div.media p.about-media {
+    color: var(--text-color);
+    text-align: center;
+    padding-top: 5px;
+    font-size: 1.2rem;
+  }
+  .contats .social-links div.media a.media-link {
+    color: var(--text-color);
+    text-decoration: none;
+    display: flex;
+    padding-top: 6px;
+    font-size: 1.4rem;
+    justify-content: center;
+    font-weight: bold;
+  }
 }/*# sourceMappingURL=index.css.map */
