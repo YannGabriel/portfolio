@@ -1,6 +1,9 @@
 @import "./colors";
 
 .first-content {
+  @media(width <1000px){
+    max-width: 450px;
+  }
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;

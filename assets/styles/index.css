@@ -143,6 +143,11 @@ header.container-top #icon {
   align-content: center;
   align-items: center;
 }
+@media (width < 1000px) {
+  .first-content {
+    max-width: 450px;
+  }
+}
 .first-content .content-txt {
   margin: auto;
   width: 500px;
