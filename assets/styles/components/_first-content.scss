@@ -7,12 +7,18 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
+  margin: auto;
   align-self: center;
   align-content: center;
   align-items: center;
   .content-txt {
+    @media(width > 1000px){
+      width: 500px;
+    }
+    @media(width < 1000px){
+      width: 300px;
+    }
     margin: auto;
-    width: 500px;
     h1.wellcome,
     h1.dev-name {
       color: var(--text-color);
@@ -50,9 +56,13 @@
   .image-dev {
     @media (width > 1200px){
       margin: auto;
+      width: 50%
     }
-    @media (width >= 760px) and (width <=1200px){
-      margin-left: 25%;
+    @media(width < 1000px){
+      width: 300px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
     }
   }
 }

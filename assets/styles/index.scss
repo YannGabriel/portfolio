@@ -27,6 +27,19 @@ body::-webkit-scrollbar-thumb {
   border: none; 
 }
 
+.hiddenN{
+  transform: translateX(-100%);
+  opacity: 0;
+  filter: blur(10px);
+  transition: all 0.6s ease;
+}
+
+.showN{
+  transform: translateX(0);
+  filter: blur(0px);
+  transition: all 0.8s ease;
+  opacity: 1;
+}
 
 @import './components/colors';
 @import './components/all';
