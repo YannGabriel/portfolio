@@ -8,6 +8,8 @@ header.container-top{
   }
   @media (width < 1200px){
     position: fixed;
+    width: 90%;
+    margin: auto;
   }
   background-color: var(--background-color);
   color: var(--text-color);
