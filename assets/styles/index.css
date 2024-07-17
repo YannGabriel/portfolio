@@ -100,7 +100,6 @@ header.container-top {
 @media (width < 1200px) {
   header.container-top {
     position: fixed;
-    background-color: transparent;
   }
 }
 header.container-top nav.nav-bar {
@@ -160,7 +159,8 @@ header.container-top #icon {
 }
 @media (width < 1000px) {
   .first-content {
-    max-width: 450px;
+    width: 80%;
+    margin: auto;
   }
 }
 .first-content .content-txt {
@@ -192,8 +192,7 @@ header.container-top #icon {
 }
 @media (width <= 760px) {
   .first-content .content-txt p.start-txt {
-    width: 390px;
-    text-align: center;
+    width: 250px;
     margin: auto;
   }
 }
