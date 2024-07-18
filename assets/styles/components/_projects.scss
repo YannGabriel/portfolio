@@ -2,6 +2,9 @@
 @import './colors';
 
 .projects{
+  @media (width >=1000px){
+    height: 100vh;
+  }
   padding-top: 20px;
   h1.projects-title{
     color: var(--text-color);
