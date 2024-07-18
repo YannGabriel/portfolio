@@ -40,8 +40,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 :root {
-  --background-color: #050505;
-  --text-color: #fff;
+  --background-color: #101113;
+  --text-color: #E3E4E5;
   --details: #E4DEDE;
   --cards: #373949;
   --cards-project-color: #8d8d8d;
@@ -49,13 +49,13 @@ body::-webkit-scrollbar-thumb {
 
 .light-theme {
   --background-color: #E4DEDE;
-  --text-color: #050505;
+  --text-color: #101113;
   --cards: #bcbcbcdf;
 }
 
 :root {
-  --background-color: #050505;
-  --text-color: #fff;
+  --background-color: #101113;
+  --text-color: #E3E4E5;
   --details: #E4DEDE;
   --cards: #373949;
   --cards-project-color: #8d8d8d;
@@ -63,7 +63,7 @@ body::-webkit-scrollbar-thumb {
 
 .light-theme {
   --background-color: #E4DEDE;
-  --text-color: #050505;
+  --text-color: #101113;
   --cards: #bcbcbcdf;
 }
 
@@ -73,8 +73,8 @@ body {
 }
 
 :root {
-  --background-color: #050505;
-  --text-color: #fff;
+  --background-color: #101113;
+  --text-color: #E3E4E5;
   --details: #E4DEDE;
   --cards: #373949;
   --cards-project-color: #8d8d8d;
@@ -82,7 +82,7 @@ body {
 
 .light-theme {
   --background-color: #E4DEDE;
-  --text-color: #050505;
+  --text-color: #101113;
   --cards: #bcbcbcdf;
 }
 
@@ -138,8 +138,8 @@ header.container-top #icon {
   }
 }
 :root {
-  --background-color: #050505;
-  --text-color: #fff;
+  --background-color: #101113;
+  --text-color: #E3E4E5;
   --details: #E4DEDE;
   --cards: #373949;
   --cards-project-color: #8d8d8d;
@@ -147,7 +147,7 @@ header.container-top #icon {
 
 .light-theme {
   --background-color: #E4DEDE;
-  --text-color: #050505;
+  --text-color: #101113;
   --cards: #bcbcbcdf;
 }
 
@@ -184,7 +184,7 @@ header.container-top #icon {
   color: var(--text-color);
 }
 .first-content .content-txt h1.dev-name {
-  color: #7AAABC;
+  color: var(--text-color);
   padding-top: 8px;
   font-size: 3rem;
 }
@@ -258,7 +258,7 @@ header.container-top #icon {
 }
 @media (width >= 760px) {
   .about-dev .dev-image-child img.dev-child-image {
-    width: 80%;
+    width: 65%;
     margin: auto;
     display: flex;
   }
@@ -276,7 +276,8 @@ header.container-top #icon {
 }
 @media (width > 1000px) {
   .about-dev-txt {
-    width: 80%;
+    width: 75%;
+    text-align: center;
     margin: auto;
   }
 }
@@ -318,8 +319,8 @@ header.container-top #icon {
 }
 
 :root {
-  --background-color: #050505;
-  --text-color: #fff;
+  --background-color: #101113;
+  --text-color: #E3E4E5;
   --details: #E4DEDE;
   --cards: #373949;
   --cards-project-color: #8d8d8d;
@@ -327,7 +328,7 @@ header.container-top #icon {
 
 .light-theme {
   --background-color: #E4DEDE;
-  --text-color: #050505;
+  --text-color: #101113;
   --cards: #bcbcbcdf;
 }
 
@@ -401,8 +402,8 @@ header.container-top #icon {
   }
 }
 :root {
-  --background-color: #050505;
-  --text-color: #fff;
+  --background-color: #101113;
+  --text-color: #E3E4E5;
   --details: #E4DEDE;
   --cards: #373949;
   --cards-project-color: #8d8d8d;
@@ -410,7 +411,7 @@ header.container-top #icon {
 
 .light-theme {
   --background-color: #E4DEDE;
-  --text-color: #050505;
+  --text-color: #101113;
   --cards: #bcbcbcdf;
 }
 
@@ -591,7 +592,7 @@ header.container-top #icon {
     margin: auto;
   }
   .contats .social-links .media-line {
-    border-right: 0.25px solid rgba(255, 255, 255, 0.145);
+    border-right: 0.25px solid var(--cards);
   }
   .contats .social-links div.media {
     width: 100%;

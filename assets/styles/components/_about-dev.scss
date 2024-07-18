@@ -18,7 +18,7 @@
   .dev-image-child {
     @media (width >= 760px) {
       img.dev-child-image {
-        width: 80%;
+        width: 65%;
         margin: auto;
         display: flex;
       }
@@ -36,7 +36,8 @@
 
 .about-dev-txt{
   @media(width > 1000px){
-    width: 80%;
+    width: 75%;
+    text-align: center;
     margin: auto;
   }
   @media (width < 760px){

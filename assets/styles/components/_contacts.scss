@@ -31,7 +31,7 @@
       width: 1000px;
       margin: auto;
       .media-line{
-        border-right: 0.25px solid rgba(255, 255, 255, 0.145);
+        border-right: 0.25px solid var(--cards);
       }
       div.media{
         width: 100%;
