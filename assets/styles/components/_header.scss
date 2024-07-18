@@ -8,7 +8,7 @@ header.container-top{
   }
   @media (width < 1200px){
     position: fixed;
-    width: 90%;
+    width: 100%;
     margin: auto;
   }
   background-color: var(--background-color);
@@ -46,6 +46,7 @@ header.container-top{
       display: none;
     }
     #icon{
+      margin: 20px;
       width: 40px;
     }
   }
