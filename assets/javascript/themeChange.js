@@ -1,4 +1,7 @@
-var icon = document.getElementById("icon");
+
+
+ //light/dark mode
+ var icon = document.getElementById("icon");
 
 icon.onclick = function() {
     document.body.classList.toggle("light-theme");
@@ -15,15 +18,4 @@ icon.onclick = function() {
     console.log("Theme toggled, current class:", document.body.classList);
 }
 
-const myObserverN = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('showN');
-        } else {
-            entry.target.classList.remove('showN');
-        }
-    });
-});
 
-const elementsN = document.querySelectorAll('.hiddenN');
-elementsN.forEach((element) => myObserverN.observe(element));
