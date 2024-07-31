@@ -352,7 +352,7 @@ header.container-top #icon {
   }
   .skills div.boxes div.box-skill {
     width: 300px;
-    height: 200px;
+    height: 225px;
     border-radius: 15px;
     background-color: var(--cards);
     padding: 1.3rem;
