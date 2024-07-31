@@ -357,6 +357,9 @@ header.container-top #icon {
     background-color: var(--cards);
     padding: 1.3rem;
   }
+  ul.hardskilss {
+    display: contents;
+  }
   .tecs-logos {
     padding-top: 60px;
     display: flex;
