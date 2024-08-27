@@ -155,4 +155,13 @@ header.container-top nav.nav-bar ul.search-list img.menu-button {
 }
 .skills .box-skill .front-endTecs, .skills .box-skill .back-endTecs, .skills .box-skill .skillLogo {
   padding-bottom: 0.8rem;
+}
+
+.projects {
+  background-color: #1c1c1c;
+  color: #E3E4E5;
+}
+
+.contacts {
+  background-color: #efefef;
 }/*# sourceMappingURL=index.css.map */
