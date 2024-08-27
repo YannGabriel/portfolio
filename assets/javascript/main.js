@@ -12,7 +12,7 @@ function loadProjects() {
         project.classList.add("project");
 
         const img = document.createElement("img");
-        img.classList.add("proect-image")
+        img.classList.add("project-image")
         img.src = projeto.image;  
         img.alt = projeto.name;    
 

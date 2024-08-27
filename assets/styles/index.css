@@ -157,9 +157,49 @@ header.container-top nav.nav-bar ul.search-list img.menu-button {
   padding-bottom: 0.8rem;
 }
 
-.projects {
+.content-main {
+  padding: 5rem 0rem 5rem 0rem;
   background-color: #1c1c1c;
   color: #E3E4E5;
+}
+.content-main .projects h1.sectionTitle {
+  font-size: 2.3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  padding-left: 0.8rem;
+  letter-spacing: 0.025rem;
+}
+.content-main .projects p.aboutProjects {
+  width: 90%;
+  padding-left: 0.8rem;
+  font-size: "Poppins", sans-serif;
+}
+.content-main .projects #projects-view .project .project-image {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+.content-main .projects #projects-view .project .project-content h2.project-name {
+  font-size: 2.3rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.content-main .projects #projects-view .project .project-content p.project-description {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  font-size: 1.125rem;
+  padding: 0.9rem 0rem;
+}
+.content-main .projects #projects-view .project .project-content .project-tecs {
+  padding-bottom: 1rem;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  width: 60%;
+}
+.content-main .projects #projects-view .project .project-content .project-tecs .tech-image {
+  margin-left: 0.8rem;
 }
 
 .contacts {

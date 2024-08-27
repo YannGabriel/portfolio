@@ -1,7 +1,54 @@
 
 
-.projects{
+.content-main{
+  padding: 5rem 0rem 5rem 0rem;
   background-color: $bckg-dark;
   color: $light-text-color;
-  
+  .projects{
+    h1.sectionTitle{
+      font-size: $title-size;
+      font-family: $Poppins;
+      font-weight: bold;
+      padding-left: 0.8rem;
+      letter-spacing: 0.025rem;
+    }
+    p.aboutProjects{
+      width: 90%;
+      padding-left: 0.8rem;
+      font-size: $Poppins;
+    }
+    #projects-view{
+      .project{
+        .project-image{
+          display: flex;
+          margin: auto;
+          justify-content: center;
+        }
+        .project-content{
+          h2.project-name{
+            font-size: $title-size;
+            font-family: $Poppins;
+            text-align: center;
+          }
+          p.project-description{
+            text-align: center;
+            width: 90%;
+            margin: auto;
+            font-size: $text-size;
+            padding: 0.9rem 0rem;
+          }
+          .project-tecs{
+            padding-bottom: 1rem;
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            width: 60%;
+            .tech-image{
+              margin-left: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }
