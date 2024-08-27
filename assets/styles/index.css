@@ -41,6 +41,7 @@ header.container-top {
   display: flex;
   justify-content: end;
   align-items: center;
+  border-bottom: 0.75px solid white;
 }
 header.container-top nav.nav-bar ul.search-list {
   display: flex;
