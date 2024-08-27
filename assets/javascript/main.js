@@ -24,11 +24,23 @@ function loadProjects() {
         description.classList.add("project-description")
         description.textContent = projeto.description
 
+        const techContainer = document.createElement("div")
+        techContainer.classList.add("project-tecs")
+
+        projeto.tecs.forEach(tec => {
+          const techImage = document.createElement("img")
+          techImage.classList.add("tech-image");
+          techImage.src = tec;
+          techImage.alt = `${tec} logo`; 
+          techContainer.appendChild(techImage);
+        })
+
         container.appendChild(project); 
         project.appendChild(img);
         project.appendChild(projectContent)
         projectContent.appendChild(title);
         projectContent.appendChild(description)
+        projectContent.appendChild(techContainer);
 
       });
     })

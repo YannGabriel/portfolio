@@ -2,7 +2,7 @@
   {
     "name": "Sala de Leitura",
     "image": "./assets/imagens/projects-images/SalaLeitura.svg  ",
-    "tecs": ["./assets/imagens/", "SASS", "JavaScript", "BootStrap"],
+    "tecs": ["./assets/imagens/icon-images/html.svg", "./assets/imagens/icon-images/sass.svg", "./assets/imagens/icon-images/javascript.svg", "./assets/imagens/icon-images/bootstrap.svg"],
     "description": "Projeto feito para a sala de leitura de um ambiente estudantil, focada na simplicidade e fácil interação"
   },
   {
