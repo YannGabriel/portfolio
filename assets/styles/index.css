@@ -147,8 +147,11 @@ header.container-top nav.nav-bar ul.search-list img.menu-button {
 }
 .skills .box-skill .skillLogo {
   width: 30px;
-  margin-left: 0.6rem;
+  margin-left: 0.8rem;
 }
 .skills .box-skill p.about-skill {
   padding: 0rem 0rem 0rem 0.8rem;
+}
+.skills .box-skill .front-endTecs, .skills .box-skill .back-endTecs, .skills .box-skill .skillLogo {
+  padding-bottom: 0.8rem;
 }/*# sourceMappingURL=index.css.map */
