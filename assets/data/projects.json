@@ -8,19 +8,19 @@
   {
     "name": "Brazilian Grill House",
     "image": "./assets/imagens/projects-images/BrazilianGrillHouse.svg",
-    "tecs": ["Html", "SASS", "JavaScript"],
+    "tecs": ["./assets/imagens/icons-images/html.svg", "./assets/imagens/icons-images/sass.svg", "./assets/imagens/icons-images/javascript.svg"],
     "description": "Simulação de um website de uma churrascaria, explorando funcionalidades de estilização e interação de conteúdo em JavaScript."
   },
   {
     "name": "The Last of Us",
     "image": "./assets/imagens/projects-images/TheLastOfUs.svg",
-    "tecs": ["Html", "CSS", "JavaScript"],
+    "tecs": ["./assets/imagens/icons-images/html.svg", "./assets/imagens/icons-images/css.svg", "./assets/imagens/icons-images/javascript.svg"],
     "description": "Land Page simples onde os usuários podem observar mais do projeto, utilizando tecs de JavaScript para renderização e animações."
   },
   {
     "name": "Geo Visit",
     "image": "./assets/imagens/projects-images/GeoVisit.svg",
-    "tecs": ["Html", "CSS", "BootStrap"],
+    "tecs": ["./assets/imagens/icons-images/html.svg", "./assets/imagens/icons-images/css.svg", "./assets/imagens/icons-images/bootstrap.svg"],
     "description": "Projeto feito para aprendizagem de BootStrap, como um  menu de locais e viagens."
   }
 ]
