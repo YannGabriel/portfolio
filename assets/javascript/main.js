@@ -1,5 +1,6 @@
 function loadProjects() {
-  fetch('../assets/data/projects.json')
+  const url = 'https://raw.githubusercontent.com/YannGabriel/portfolio/main/assets/data/projects.json'
+  fetch(url)
     .then(response => response.json())
     .then(projetos => {
       const container = document.getElementById('projects-view');
