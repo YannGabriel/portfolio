@@ -1,83 +1,29 @@
-@import "./colors";
 
-
-@media (width >= 1200px) {
-  .skills {
-    padding-top: 15%;
-    height: 100vh;
-    width: 1200px;
-    margin: auto;
-    .skills-behind {
-      color: var(--text-color);
-      font-size: 3.2rem;
-      padding-bottom: 1.2rem;
-    }
-
-    div.boxes {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      margin: auto;
-      color: var(--text-color);
-      div.box-skill {
-        width: 300px;
-        height: 225px;
-        border-radius: 15px;
-        background-color: var(--cards);
-        padding: 1.3rem;
-      }
-    }
+.skills{
+  background-color: $bckg-dark;
+  color: $light-text-color;
+  padding: 4.525rem 0rem 4.525rem 0rem;
+  h1.skillHub{
+    font-size: $title-size;
+    font-family: $Poppins;
+    font-weight: bold;
+    letter-spacing: 0.125rem;
+    padding-left: 2rem;
   }
-  ul.hardskilss{
-    display: contents;
-  }
-  .tecs-logos{
-    padding-top: 60px;
-    display: flex;
+  .box-skill{
+    padding: 2rem 0rem 2rem 0rem;
+    border-bottom: 1px solid $bckg-light;
+    width: 80%;
     margin: auto;
-    width: 500px;
-    justify-content: space-between;
-    img.tec-image{
-      width: 60px;
+    .skill-title{
+      padding: 0.8rem;
+    }
+    .skillLogo{
+      width: 30px;
+      margin-left: 0.6rem;
+    }
+    p.about-skill{
+      padding: 0rem 0rem 0rem 0.8rem;
     }
   }
 }
-
-@media (width < 1200px){
-  .skills{
-    h1.skills-behind{
-      color: var(--text-color);
-      text-align: center;
-      padding: 10px 0px 10px 0px;
-      font-size: 2.4rem;
-    }
-
-    .boxes{
-      margin: auto;
-      width: 80%;
-      .box-skill{
-        background-color: var(--cards);
-        width: 70%;
-        margin: auto;
-        margin-bottom: 1.4rem;
-        padding: 10px;
-        border-radius: 10px;
-        .skill-title, .about-skill{
-          padding: 3px;
-          color: var(--text-color);
-        }
-      }
-    }
-
-    .tecs-logos{
-      padding-top: 4%;
-      width: 55%;
-      margin: auto;
-      .tec-image{
-        width: 45px;
-        margin-right: 5px;
-      }
-    }
-  }
-}
-
-

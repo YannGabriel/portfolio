@@ -1,0 +1,23 @@
+
+#menuMobile{
+  position: absolute;
+  z-index: 2;
+  width: 60%;
+  left: 40%;
+  text-align: end;
+  background-color: $bckg-dark;
+  nav.nav-barMobile{
+    ul.mobileList{
+      list-style-type: none;
+      a.menu-target{
+        color: $light-text-color;
+        text-decoration: none;
+        li.mobileItem{
+          padding: 10px;
+          font-family: $Poppins;
+        }
+      }
+    }
+  }
+
+}

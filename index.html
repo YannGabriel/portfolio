@@ -27,20 +27,38 @@
             <li class="serach-item">Contatos</li>
           </a>
           <img
-            src="assets/imagens/icons-images/Light-MOde.png"
-            data-light-src="assets/imagens/icons-images/Dark-mode.png"
-            data-dark-src="assets/imagens/icons-images/Light-MOde.png"
-            class="trade-light-dark"
+            src="assets/imagens/icons-images/menu.svg"
+            class="menu-button"
             id="icon"
+            onclick="openMenu()"
           />
         </ul>
       </nav>
     </header>
+    <menu class="mobile-menu" id="menuMobile">
+      <nav class="nav-barMobile">
+        <ul class="mobileList">
+          <a href="#devDescription" class="menu-target">
+            <li class="mobileItem">Sobre mim</li>
+          </a>
+          <a href="#skills" class="menu-target">
+            <li class="mobileItem">Habilidades</li>
+          </a>
+          <a href="#projects" class="menu-target">
+            <li class="mobileItem">Projetos</li>
+          </a>
+          <a href="#contacts" class="menu-target">
+            <li class="mobileItem">Contatos</li>
+          </a>
+        </ul>
+      </nav>
+    </menu>
 
+    <!--Test sometime put a image in background.-->
     <section class="first-content">
       <div class="content-txt hiddenN">
-        <h1 class="wellcome">Olá, Mundo!, eu sou</h1>
-        <h1 class="dev-name"><span id="profile-name">Carregando...</span></h1>
+        <h1 class="introduction dev-hello">Olá, Mundo! Me chamo </h1>
+        <h1 class="dev-name introduction-name"><span id="profile-name">Yann Gabriel</span></h1>
         <p class="start-txt">
           Aqui você verá um pouco sobre mim, meus projetos e meus conhecimentos!
         </p>
@@ -52,9 +70,7 @@
             class="link-image-target"
           >
             <img
-              data-dark-src="assets/imagens/icons-images/Githb-dark.png"
-              data-light-src="assets/imagens/icons-images/Githb-light.png"
-              src="assets/imagens/icons-images/Githb-dark.png"
+              src="assets/imagens/icons-images/Github.png"
               class="link"
               id="github"
             />
@@ -65,9 +81,7 @@
             class="link-image-target"
           >
             <img
-              data-dark-src="assets/imagens/icons-images/Linkedin-dark.png"
-              data-light-src="assets/imagens/icons-images/Linkedin-light.png"
-              src="assets/imagens/icons-images/Linkedin-dark.png"
+              src="assets/imagens/icons-images/Linkedin.png"
               alt=""
               class="link linkedin"
             />
@@ -76,47 +90,46 @@
       </div>
     </section>
 
-    <section class="about-dev" id="about-me">
-      <div class="dev-image-child">
+    <section class="about-dev" id="devDescription">
+      <div class="dev--image">
         <img
-          src="assets/imagens/dev-images/Child-Yann-dark.png"
-          data-dark-src="assets/imagens/dev-images/Child-Yann-dark.png"
-          data-light-src="assets/imagens/dev-images/Child-Yann-light.png"
-          class="dev-child-image"
+          src="assets/imagens/dev-images/devImage.svg"
+          class="image"
         />
       </div>
-      <div class="about-dev-txt">
+      <div class="dev-description">
         <h1 class="about-me">Sobre mim</h1>
-        <p class="more-about-dev">
+        <p class="dev-infos">
           Meu nome é Yann Gabriel, sou um jovem apaixonado pela programação desde
           minha infância! Tudo começou quando criei minha curiosidade sobre “Como
-          os jogos que joguei foram criados?”. Depois disso, entrei neste mundo!
+          os jogos que joguei foram criados?”.
+          <br>
+          Depois disso, entrei neste mundo!
         </p>
       </div>
     </section>
 
     <section class="skills" id="skills">
-      <h1 class="skills-behind">SKILLS</h1>
+      <h1 class="skillHub">SKILLS</h1>
 
       <div class="boxes">
         <div class="box-skill">
           <img
-            src="assets/imagens/icons-images/UI_UX-dark.png"
-            data-dark-src="assets/imagens/icons-images/UI_UX-dark.png"
-            data-light-src="assets/imagens/icons-images/UI_UX-light.png"
+            src="assets/imagens/icons-images/ui-ux.svg"
+            alt="Ui/UX Design"
             class="skill-image"
           />
           <h2 class="skill-title" translate="no">UI/UX</h2>
+          <img src="assets/imagens/icons-images/figma.svg" alt="Figma" class="skillLogo">
           <p class="about-skill">
             Criação de projetos com foco na Interface e Experiência do usuário.
           </p>
         </div>
+
         <div class="box-skill">
           <img
-            src="assets/imagens/icons-images/web-development-dark.png"
-            data-dark-src="assets/imagens/icons-images/web-development-dark.png"
-            alt=""
-            data-light-src="assets/imagens/icons-images/web-development-light.png"
+            src="assets/imagens/icons-images/webDevelopment.svg"
+            alt="Desenvolvimento Web"
             class="skill-image"
           />
           <h2 class="skill-title">Desenvolvimento Web</h2>
@@ -124,49 +137,35 @@
             Criação de aplicações web, como sites, blogs e tudo que for possível!
           </p>
         </div>
-        <div class="box-skill">
+        
+        <div class="box-skill noBorder">
           <img
-            src="assets/imagens/icons-images/Loading.png"
-            alt=""
+            src="assets/imagens/icons-images/backEnd.svg"
+            alt="Desenvolvimento Back End"
             class="skill-image"
           />
-          <h2 class="skill-title">Em breve...</h2>
+          <h2 class="skill-title">Back End</h2>
         </div>
       </div>
 
       <div class="tecs-logos">
             <img
-              src="assets/imagens/tec-images/HTML-SKILL.png"
-              data-dark-src="assets/imagens/tec-images/HTML-SKILL.png"
-              data-light-src="assets/imagens/tec-images/HTML-SKILL-LIGHT.png"
               class="tec-image"
             />
         
             <img
-              src="assets/imagens/tec-images/CSS-SKILL.png"
-              data-dark-src="assets/imagens/tec-images/CSS-SKILL.png"
-              data-light-src="assets/imagens/tec-images/CSS-SKILL-LIGHT.png"
               class="tec-image"
             />
           
             <img
-              src="assets/imagens/tec-images/JS-SKILL.png"
-              data-dark-src="assets/imagens/tec-images/JS-SKILL.png"
-              data-light-src="assets/imagens/tec-images/JS-SKILL-LIGHT.png"
               class="tec-image"
             />
           
             <img
-              src="assets/imagens/tec-images/PYTHON-SKILL.png"
-              data-dark-src="assets/imagens/tec-images/PYTHON-SKILL.png"
-              data-light-src="assets/imagens/tec-images/PYTHON-SKILL_LIGHT.png"
               class="tec-image"
             />
           
             <img
-              src="assets/imagens/tec-images/SCSS-SKILL.png"
-              data-dark-src="assets/imagens/tec-images/SCSS-SKILL.png"
-              data-light-src="assets/imagens/tec-images/SCSS-SKILL-LIGHT.png"
               class="tec-image"
             />
 
@@ -182,148 +181,8 @@
           <br />
           código e website!
         </p>
-        <div class="projects-view">
-          <div class="big-projects">
-            <div class="project-main" id="cafe-mania">
-              <img
-                src="assets/imagens/projects-images/cafe-mania.png"
-                alt=""
-                class="project-image"
-              />
-              <h2 class="project-title">Café Mania</h2>
-              <p class="about-project">
-                Um site sobre uma cafeteria, focando no enredo dela, cores e seu padrão de estética!
-              </p>
-              <div class="icons">
-                <a
-                  href="https://yanngabriel.github.io/cafe-mania"
-                  target="_blank"
-                  class="target-link"
-                >
-                  <img
-                    src="assets/imagens/icons-images/eye-project.png"
-                    alt=""
-                    class="icons-project"
-                  />
-                </a>
-                <a
-                  href="https://github.com/YannGabriel/cafe-mania"
-                  target="_blank"
-                  class="target-link"
-                >
-                  <img
-                    src="assets/imagens/icons-images/Githb-dark.png"
-                    alt=""
-                    class="icons-project"
-                  />
-                </a>
-              </div>
-            </div>
+        <div id="projects-view">
 
-            <div class="project-main" id="pokemon">
-              <img
-                src="assets/imagens/projects-images/pokemon.png"
-                alt=""
-                class="project-image"
-              />
-              <h2 class="project-title">Pokemon</h2>
-              <p class="about-project">
-                Um site com foco em consumo de API, utilizando a pokeAPI e recursos JavaScript
-              </p>
-              <div class="icons">
-                <a
-                  href="https://yanngabriel.github.io/pokemon"
-                  target="_blank"
-                  class="target-link"
-                >
-                  <img
-                    src="assets/imagens/icons-images/eye-project.png"
-                    alt=""
-                    class="icons-project"
-                  />
-                </a>
-                <a
-                  href="https://github.com/YannGabriel/pokemon"
-                  target="_blank"
-                  class="target-link"
-                >
-                  <img
-                    src="assets/imagens/icons-images/Githb-dark.png"
-                    alt=""
-                    class="icons-project"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="sub-projects">
-            <div class="project">
-              <div class="sub-project-image">
-                <img
-                  src="assets/imagens/projects-images/tlou.png"
-                  class="sub-image"
-                />
-              </div>
-              <div class="sub-project-txt">
-                <h2 class="project-title-sub" translate="no">The Last of Us</h2>
-                <br />
-                <p class="about-sub-project">
-                  Land page sobre
-                  <span class="translation" translate="no">the last of us.</span>
-                </p>
-                <a
-                  href="https://yanngabriel.github.io/tlou"
-                  target="_blank"
-                  class="see-more"
-                >
-                  Acesse já!
-                </a>
-              </div>
-            </div>
-            <br />
-            <div class="project">
-              <div class="sub-project-image">
-                <img
-                  src="assets/imagens/projects-images/CMLOGO.png"
-                  class="sub-image"
-                />
-              </div>
-              <div class="sub-project-txt">
-                <h2 class="project-title-sub">Culinaria Mista</h2>
-                <br />
-                <p class="about-sub-project">Cardápio de restaurante.</p>
-                <a
-                  href="https://yanngabriel.github.io/menu"
-                  target="_blank"
-                  class="see-more"
-                >
-                  Acesse já!
-                </a>
-              </div>
-            </div>
-            <br />
-            <div class="project">
-              <div class="sub-project-image">
-                <img
-                  src="assets/imagens/projects-images/more.png"
-                  class="sub-image"
-                />
-              </div>
-              <div class="sub-project-txt">
-                <h2 class="project-title-sub">Mais projetos</h2>
-                <br />
-                <p class="about-sub-project">Veja mais no meu GitHub!</p>
-                <a
-                  href="https://github.com/YannGabriel"
-                  target="_blank"
-                  class="see-more"
-                >
-                  Acesse já!
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
     </main>
@@ -337,10 +196,8 @@
       <div class="social-links">
         <div class="media media-line">
           <img
-            src="assets/imagens/icons-images/Linkedin-dark.png"
-            data-dark-src="assets/imagens/icons-images/Linkedin-dark.png"
-            data-light-src="assets/imagens/icons-images/Linkedin-light.png"
-            alt=""
+            src="assets/imagens/icons-images/Linkedin.png"
+            alt="Linkedin"
             class="contact-image"
           />
           <p class="about-media">
@@ -354,10 +211,8 @@
 
         <div class="media media-line">
           <img
-            src="assets/imagens/icons-images/Githb-dark.png"
-            data-dark-src="assets/imagens/icons-images/Githb-dark.png"
-            data-light-src="assets/imagens/icons-images/Githb-light.png"
-            alt=""
+            src="assets/imagens/icons-images/Githb.png"
+            alt="GitHub"
             class="contact-image"
           />
           <p class="about-media">
@@ -370,10 +225,7 @@
 
         <div class="media">
           <img
-            src="assets/imagens/icons-images/wpp-dark.png"
-            data-dark-src="assets/imagens/icons-images/wpp-dark.png"
-            data-light-src="assets/imagens/icons-images/wpp-light.png"
-            alt=""
+            alt="Whatsapp"
             class="contact-image"
           />
           <p class="about-media">
@@ -388,7 +240,7 @@
 
     <br /><br /><br /><br /><br />
 
-    <script src="assets/javascript/themeChange.js"></script>
+    <script src="assets/javascript/menuButton.js"></script>
     <script src="assets/javascript/objectView.js"></script>
     <script src="assets/javascript/api.js"></script>
     <script src="assets/javascript/main.js"></script>

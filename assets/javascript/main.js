@@ -1,12 +1,37 @@
+function loadProjects() {
+  fetch('../assets/data/projects.json')
+    .then(response => response.json())
+    .then(projetos => {
+      const container = document.getElementById('projects-view');
 
-function updateProfileInfos(profileData){
-  const name = document.getElementById('profile-name')
-  console.log("Passei")
-  name.innerText = profileData.name
+      projetos.map(projeto => {
+        const project = document.createElement("div");
+        const projectContent = document.createElement("div")
+        projectContent.classList.add("project-content")
+        project.classList.add("project");
+
+        const img = document.createElement("img");
+        img.classList.add("proect-image")
+        img.src = projeto.image;  
+        img.alt = projeto.name;    
+
+        const title = document.createElement("h2");
+        title.classList.add("project-name")
+        title.textContent = projeto.name; 
+
+        const description = document.createElement("p")
+        description.classList.add("project-description")
+        description.textContent = projeto.description
+
+        container.appendChild(project); 
+        project.appendChild(img);
+        project.appendChild(projectContent)
+        projectContent.appendChild(title);
+        projectContent.appendChild(description)
+
+      });
+    })
+    .catch(error => console.error('Erro ao carregar os projetos:', error));
 }
 
-(async () => {
-  const profileData = await fetchProfileData()
-  updateProfileInfos(profileData)
-})()
-
+loadProjects();

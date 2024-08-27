@@ -1,84 +1,28 @@
 
 
-@import "./colors";
-
-.first-content {
-  @media(width <1000px){
-    width: 80%;
+.first-content{
+  background-color: $bckg-dark;
+  color: $light-text-color;
+  text-align: center;
+  padding-bottom: 9.25rem;
+  h1.introduction{
+    padding-top: 40%;
+    width: 95%;
     margin: auto;
+    font-size: $title-size;
   }
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 100vh;
-  margin: auto;
-  align-self: center;
-  align-content: center;
-  align-items: center;
-  .content-txt {
-    @media(width > 1000px){
-      width: 500px;
-    }
-    @media(width < 1000px){
-      width: 300px;
-    }
+  h1.dev-name{
+    padding-bottom: 0.8rem;
+    font-size: $title-size;
+  }
+  p.start-txt{
+    font-family: $Poppins;
+    width: 85%;
     margin: auto;
-    h1.wellcome,
-    h1.dev-name {
-      color: var(--text-color);
-    }
-    h1.dev-name {
-      color: var(--text-color);
-      padding-top: 8px;
-      font-size: 3rem;
-    }
-    p.start-txt {
-      @media (width <= 760px){
-        width: 250px;
-        margin: auto;
-      }
-      padding-top: 7px;
-      font-size: 1.4rem;
-      color: var(--text-color);
-    }
-
-    div.link-images {
-      width: 130px;
-      padding-top: 10px;
-      @media (width < 1200px){
-        margin: auto;
-      }
-      a.link-image-target {
-        text-decoration: none;
-        img.link {
-          width: 60px;
-        }
-      }
-    }
+    font-size: $text-size;
+    padding-inline-start: 1.1rem;
   }
-  .image-dev {
-    @media (width > 1200px){
-      margin: auto;
-      width: 50%
-    }
-    @media(width < 1000px){
-      width: 300px;
-      margin: auto;
-      display: flex;
-      justify-content: center;
-    }
+  a{
+    text-decoration: none;
   }
 }
-
-@media (width <= 1200px){
-  .first-content{
-    display: block;
-    text-align: center;
-    div.content-txt{
-      padding-top: 15%;
-    }
-    .image-dev{
-      width: 25%;
-    }
-  }
-}
-

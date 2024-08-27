@@ -1,76 +1,23 @@
-
-
-.about-dev {
-
-  @media (width >= 1200px) {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-  }
-
-  @media (width < 1200px) {
-    padding-top: 300px;
+.about-dev{
+  background-color: $bckg-light;
+  color: $dark-text-color;
+  padding-top: 5rem;
+  img.image{
     display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .dev-image-child {
-    @media (width >= 760px) {
-      img.dev-child-image {
-        width: 65%;
-        margin: auto;
-        display: flex;
-      }
-    }
-    @media (width < 760px) {
-      img.dev-child-image {
-        width: 75%;
-        margin: auto;
-        display: flex;
-      }
-    }
-  }
-
-}
-
-.about-dev-txt{
-  @media(width > 1000px){
-    width: 75%;
-    text-align: center;
     margin: auto;
   }
-  @media (width < 760px){
-    text-align: center;
-    margin: auto;
-    padding-top: 10%;
-  }
-  color: var(--text-color);
-  h1.about-me{
-    @media(width > 1000px){
-      text-align: end;
-    }
-
-    @media( width <= 1000px){
-      margin: auto;
+  .dev-description{
+    h1.about-me{
+      font-size: $title-size;
       text-align: center;
+      padding-bottom: 1rem;
     }
-
-    font-size: 2.8rem;
-  }
-  p.more-about-dev{
-    @media(width > 1000px){
-      text-align: end;
-    }
-
-    @media(width <= 1000px){
-      margin: auto;
+    p.dev-infos{
+      width: 95%;
       text-align: center;
-      width: 80%;
+      margin: auto;
+      padding: 1rem 0rem 2.5rem 0rem;
+      font-family: $Poppins;
     }
-
-    font-size: 1.3rem;
   }
 }
-
-

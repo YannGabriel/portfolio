@@ -17,12 +17,12 @@ body::-webkit-scrollbar {
   width: 3px;
 }
 
-body::-webkit-scrollbar-track {
-  background: var(--cards); 
-}
+//body::-webkit-scrollbar-track {
+  //background: var(--cards); 
+//}
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--text-color); 
+  //background-color: var(--text-color); 
   border-radius: 20px; 
   border: none; 
 }
@@ -42,8 +42,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 @import './components/colors';
-@import './components/all';
+@import './components/sizes';
+@import './components/fonts';
 @import './components/header';
+@import './components/menu-mobile';
 @import './components/first-content';
 @import './components/about-dev';
 @import './components/skills';
