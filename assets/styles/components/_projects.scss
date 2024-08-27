@@ -19,6 +19,10 @@
     }
     #projects-view{
       .project{
+        width: 90%;
+        margin: auto;
+        padding: 1.25rem 0rem;
+        border-bottom: 1px solid $light-text-color;
         .project-image{
           display: flex;
           margin: auto;
