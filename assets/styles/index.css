@@ -209,11 +209,12 @@ header.container-top nav.nav-bar ul.search-list img.menu-button {
 }
 .content-main .projects #projects-view .project .project-content .buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 1rem;
   margin: auto;
-  width: 80%;
 }
 .content-main .projects #projects-view .project .project-content .buttons .buttonTarget {
+  width: 45%;
   background-color: #efefef;
   color: #1c1c1c;
   padding: 0.8rem 0.8rem;

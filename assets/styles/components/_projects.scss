@@ -53,10 +53,11 @@
           }
           .buttons{
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            gap: 1rem;
             margin: auto;
-            width: 80%;
             .buttonTarget{
+              width: 45%;
               background-color: $bckg-light;
               color: $dark-text-color;
               padding: 0.8rem 0.8rem;
