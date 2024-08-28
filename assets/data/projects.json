@@ -19,18 +19,48 @@
     "name": "Brazilian Grill House",
     "image": "./assets/imagens/projects-images/BrazilianGrillHouse.svg",
     "tecs": ["./assets/imagens/icons-images/html.svg", "./assets/imagens/icons-images/sass.svg", "./assets/imagens/icons-images/javascript.svg"],
-    "description": "Simulação de um website de uma churrascaria, explorando funcionalidades de estilização e interação de conteúdo em JavaScript."
+    "description": "Simulação de um website de uma churrascaria, explorando funcionalidades de estilização e interação de conteúdo em JavaScript.",
+    "buttons": [
+      {
+        "text": "Ver Projeto",
+        "link": "https://yanngabriel.github.io/Brazilian-GrillHouse"
+      },
+      {
+        "text": "Código Fonte",
+        "link": "https://github.com/YannGabriel/Brazilian-GrillHouse"
+      }
+    ]
   },
   {
     "name": "The Last of Us",
     "image": "./assets/imagens/projects-images/TheLastOfUs.svg",
     "tecs": ["./assets/imagens/icons-images/html.svg", "./assets/imagens/icons-images/css.svg", "./assets/imagens/icons-images/javascript.svg"],
-    "description": "Land Page simples onde os usuários podem observar mais do projeto, utilizando tecs de JavaScript para renderização e animações."
+    "description": "Land Page simples onde os usuários podem observar mais do projeto, utilizando tecs de JavaScript para renderização e animações.",
+    "buttons": [
+      {
+        "text": "Ver Projeto",
+        "link": "https://yanngabriel.github.io/tlou"
+      },
+      {
+        "text": "Código Fonte",
+        "link": "https://github.com/YannGabriel/tlou"
+      }
+    ]
   },
   {
     "name": "Geo Visit",
     "image": "./assets/imagens/projects-images/GeoVisit.svg",
     "tecs": ["./assets/imagens/icons-images/html.svg", "./assets/imagens/icons-images/css.svg", "./assets/imagens/icons-images/bootstrap.svg"],
-    "description": "Projeto feito para aprendizagem de BootStrap, como um  menu de locais e viagens."
+    "description": "Projeto feito para aprendizagem de BootStrap, como um  menu de locais e viagens.",
+    "buttons": [
+      {
+        "text": "Ver Projeto",
+        "link": "https://yanngabriel.github.io/GeoVisit"
+      },
+      {
+        "text": "Código Fonte",
+        "link": "https://github.com/YannGabriel/GeoVisit"
+      }
+    ]
   }
 ]
