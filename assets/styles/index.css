@@ -47,6 +47,9 @@ header.container-top nav.nav-bar ul.search-list {
   display: flex;
   list-style: none;
 }
+header.container-top nav.nav-bar ul.search-list a.search-target {
+  text-decoration: none;
+}
 header.container-top nav.nav-bar ul.search-list li.serach-item {
   display: none;
 }

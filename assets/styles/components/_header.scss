@@ -10,6 +10,9 @@ header.container-top{
     ul.search-list{
       display: flex;
       list-style: none;
+      a.search-target{
+        text-decoration: none;
+      }
       li.serach-item{
         display: none;
         @media(width >= 1204px){
