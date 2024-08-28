@@ -32,22 +32,6 @@
     ]
   },
   {
-    "name": "The Last of Us",
-    "image": "./assets/imagens/projects-images/TheLastOfUs.svg",
-    "tecs": ["./assets/imagens/icons-images/html.svg", "./assets/imagens/icons-images/css.svg", "./assets/imagens/icons-images/javascript.svg"],
-    "description": "Land Page simples onde os usuários podem observar mais do projeto, utilizando tecs de JavaScript para renderização e animações.",
-    "buttons": [
-      {
-        "text": "Ver Projeto",
-        "link": "https://yanngabriel.github.io/tlou"
-      },
-      {
-        "text": "Código Fonte",
-        "link": "https://github.com/YannGabriel/tlou"
-      }
-    ]
-  },
-  {
     "name": "Geo Visit",
     "image": "./assets/imagens/projects-images/GeoVisit.svg",
     "tecs": ["./assets/imagens/icons-images/html.svg", "./assets/imagens/icons-images/css.svg", "./assets/imagens/icons-images/bootstrap.svg"],
