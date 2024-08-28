@@ -94,7 +94,6 @@ header.container-top nav.nav-bar ul.search-list img.menu-button {
 }
 
 .first-content {
-  height: 95vh;
   background-color: #1c1c1c;
   color: #E3E4E5;
   text-align: center;
@@ -286,16 +285,33 @@ header.container-top nav.nav-bar ul.search-list img.menu-button {
   padding-left: 0.8rem;
   letter-spacing: 0.025rem;
 }
+@media (width >= 1024px) {
+  .content-main .projects h1.sectionTitle {
+    padding-left: 4rem;
+  }
+}
 .content-main .projects p.aboutProjects {
   width: 90%;
   padding-left: 0.8rem;
   font-size: "Poppins", sans-serif;
+}
+@media (width >= 1024px) {
+  .content-main .projects p.aboutProjects {
+    padding-left: 4rem;
+    font-size: 1.2rem;
+  }
 }
 .content-main .projects #projects-view .project {
   width: 90%;
   margin: auto;
   padding: 1.25rem 0rem;
   border-bottom: 1px solid #E3E4E5;
+}
+@media (width >= 1024px) {
+  .content-main .projects #projects-view .project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .content-main .projects #projects-view .project .project-image {
   max-width: 100%;
@@ -309,6 +325,11 @@ header.container-top nav.nav-bar ul.search-list img.menu-button {
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
+@media (width >= 1024px) {
+  .content-main .projects #projects-view .project .project-content h2.project-name {
+    text-align: start;
+  }
+}
 .content-main .projects #projects-view .project .project-content p.project-description {
   text-align: center;
   width: 90%;
@@ -316,12 +337,24 @@ header.container-top nav.nav-bar ul.search-list img.menu-button {
   font-size: 1.125rem;
   padding: 0.9rem 0rem;
 }
+@media (width >= 1024px) {
+  .content-main .projects #projects-view .project .project-content p.project-description {
+    text-align: start;
+    margin: 0;
+  }
+}
 .content-main .projects #projects-view .project .project-content .project-tecs {
   padding-bottom: 1rem;
   display: flex;
   margin: auto;
   justify-content: center;
   width: 60%;
+}
+@media (width >= 1024px) {
+  .content-main .projects #projects-view .project .project-content .project-tecs {
+    margin: 0;
+    display: block;
+  }
 }
 .content-main .projects #projects-view .project .project-content .project-tecs .tech-image {
   margin-left: 0.8rem;
@@ -331,6 +364,11 @@ header.container-top nav.nav-bar ul.search-list img.menu-button {
   justify-content: center;
   gap: 1rem;
   margin: auto;
+}
+@media (width >= 1024px) {
+  .content-main .projects #projects-view .project .project-content .buttons {
+    justify-content: start;
+  }
 }
 .content-main .projects #projects-view .project .project-content .buttons .buttonTarget {
   width: 45%;
