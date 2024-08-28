@@ -181,6 +181,8 @@ header.container-top nav.nav-bar ul.search-list img.menu-button {
   border-bottom: 1px solid #E3E4E5;
 }
 .content-main .projects #projects-view .project .project-image {
+  max-width: 100%;
+  height: auto;
   display: flex;
   margin: auto;
   justify-content: center;
