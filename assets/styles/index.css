@@ -232,11 +232,33 @@ header.container-top nav.nav-bar ul.search-list img.menu-button {
   letter-spacing: 0.125rem;
   padding-left: 2rem;
 }
+@media (width >= 1204px) {
+  .skills .boxes {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .skills .boxes #frontend {
+    padding: 2rem;
+  }
+  .skills .boxes #backend {
+    padding: 2rem;
+    border: none;
+  }
+}
 .skills .box-skill {
   padding: 2rem 0rem 2rem 0rem;
   border-bottom: 1px solid #efefef;
   width: 80%;
   margin: auto;
+}
+@media (width >= 1204px) {
+  .skills .box-skill {
+    padding-right: 2rem;
+    border: none;
+    border-right: 1px solid #efefef;
+  }
 }
 .skills .box-skill .skill-title {
   padding: 0.8rem;

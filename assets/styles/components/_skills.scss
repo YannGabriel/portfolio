@@ -10,7 +10,27 @@
     letter-spacing: 0.125rem;
     padding-left: 2rem;
   }
+  .boxes{
+    @media(width >= 1204px){
+      width: 80%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      #frontend{
+        padding: 2rem;
+      }
+      #backend{
+        padding: 2rem;
+        border: none;
+      }
+    }
+  }
   .box-skill{
+    @media(width >= 1204px){
+      padding-right: 2rem;
+      border: none;
+      border-right: 1px solid $bckg-light;
+    }
     padding: 2rem 0rem 2rem 0rem;
     border-bottom: 1px solid $bckg-light;
     width: 80%;
