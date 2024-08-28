@@ -12,6 +12,11 @@
     padding-left: 0.85rem;
   }
   p.moreContact{
+    @media (width >= 1024px){
+      font-size: 1.2rem;
+      width: 50%;
+      padding-left: 1rem;
+    }
     width: 90%;
     text-align: start;
     padding-left: 0.85rem;
@@ -21,13 +26,33 @@
   }
 
   .social-links{
+    @media (width >= 1024px){
+      display: flex;
+      justify-content: space-between;
+      width: 1000px;
+      margin: auto;
+      }
     padding-top: 1.3rem;
     padding-left: 0.85rem;
+    #github{
+      border-right: 1px solid $dark-text-color;
+      border-left: 1px solid $dark-text-color;
+    }
     .media{
+      @media (width >= 1024px){
+        border: none;
+        width: 330px;
+        padding: 2rem;
+      }
       width: 90%;
       margin: auto;
       border-bottom: 1px solid $dark-text-color;
       padding: 1rem 0rem 1.2rem 0rem;
+      .about-media{
+        @media (width >= 1024px){
+          font-size: 1.125rem;
+        }
+      }
       .about-media::first-letter{
         padding-left: 1rem;
       }

@@ -299,6 +299,7 @@ header.container-top nav.nav-bar ul.search-list img.menu-button {
   .content-main .projects p.aboutProjects {
     padding-left: 4rem;
     font-size: 1.2rem;
+    padding-bottom: 3.2rem;
   }
 }
 .content-main .projects #projects-view .project {
@@ -398,6 +399,13 @@ header.container-top nav.nav-bar ul.search-list img.menu-button {
   text-align: start;
   padding-left: 0.85rem;
 }
+@media (width >= 1024px) {
+  .contacts p.moreContact {
+    font-size: 1.2rem;
+    width: 50%;
+    padding-left: 1rem;
+  }
+}
 .contacts p.moreContact::first-letter {
   padding-left: 1rem;
 }
@@ -405,11 +413,35 @@ header.container-top nav.nav-bar ul.search-list img.menu-button {
   padding-top: 1.3rem;
   padding-left: 0.85rem;
 }
+@media (width >= 1024px) {
+  .contacts .social-links {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: auto;
+  }
+}
+.contacts .social-links #github {
+  border-right: 1px solid #1c1c1c;
+  border-left: 1px solid #1c1c1c;
+}
 .contacts .social-links .media {
   width: 90%;
   margin: auto;
   border-bottom: 1px solid #1c1c1c;
   padding: 1rem 0rem 1.2rem 0rem;
+}
+@media (width >= 1024px) {
+  .contacts .social-links .media {
+    border: none;
+    width: 330px;
+    padding: 2rem;
+  }
+}
+@media (width >= 1024px) {
+  .contacts .social-links .media .about-media {
+    font-size: 1.125rem;
+  }
 }
 .contacts .social-links .media .about-media::first-letter {
   padding-left: 1rem;
