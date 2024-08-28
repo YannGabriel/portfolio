@@ -7,51 +7,54 @@ function loadProjects() {
 
       projetos.map(projeto => {
         const project = document.createElement("div");
-        const projectContent = document.createElement("div")
-        projectContent.classList.add("project-content")
+        const projectContent = document.createElement("div");
+        projectContent.classList.add("project-content");
         project.classList.add("project");
 
         const img = document.createElement("img");
-        img.classList.add("project-image")
+        img.classList.add("project-image");
         img.src = projeto.image;  
         img.alt = projeto.name;    
 
         const title = document.createElement("h2");
-        title.classList.add("project-name")
+        title.classList.add("project-name");
         title.textContent = projeto.name; 
 
-        const description = document.createElement("p")
-        description.classList.add("project-description")
-        description.textContent = projeto.description
+        const description = document.createElement("p");
+        description.classList.add("project-description");
+        description.textContent = projeto.description;
 
-        const techContainer = document.createElement("div")
-        techContainer.classList.add("project-tecs")
+        const techContainer = document.createElement("div");
+        techContainer.classList.add("project-tecs");
 
         projeto.tecs.forEach(tec => {
-          const techImage = document.createElement("img")
+          const techImage = document.createElement("img");
           techImage.classList.add("tech-image");
           techImage.src = tec;
           techImage.alt = `${tec} logo`; 
           techContainer.appendChild(techImage);
-        })
+        });
 
-        const buttonContainer = document.createElement("div")
-        buttonContainer.classList.add("buttons")
+        const buttonContainer = document.createElement("div");
+        buttonContainer.classList.add("buttons");
 
-        projeto.buttons.forEach(button =>{
-          const button = document.createElement("button")
-          button.classList.add("buttonTarget")
-          buttonContainer.appendChild(buttonContainer)
-        })
+        projeto.buttons.forEach(btn => {
+          const button = document.createElement("button");
+          button.classList.add("buttonTarget");
+          button.textContent = btn.text; 
+          button.addEventListener("click", () => {
+            window.location.href = btn.link; 
+          });
+          buttonContainer.appendChild(button);
+        });
 
         container.appendChild(project); 
         project.appendChild(img);
-        project.appendChild(projectContent)
+        project.appendChild(projectContent);
         projectContent.appendChild(title);
-        projectContent.appendChild(description)
+        projectContent.appendChild(description);
         projectContent.appendChild(techContainer);
-        projectContent.appendChild(buttons)
-
+        projectContent.appendChild(buttonContainer); 
       });
     })
     .catch(error => console.error('Erro ao carregar os projetos:', error));
