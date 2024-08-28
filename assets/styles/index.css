@@ -207,6 +207,21 @@ header.container-top nav.nav-bar ul.search-list img.menu-button {
 .content-main .projects #projects-view .project .project-content .project-tecs .tech-image {
   margin-left: 0.8rem;
 }
+.content-main .projects #projects-view .project .project-content .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 80%;
+}
+.content-main .projects #projects-view .project .project-content .buttons .buttonTarget {
+  background-color: #efefef;
+  color: #1c1c1c;
+  padding: 0.8rem 0.8rem;
+  border: none;
+  border-radius: 0.725rem;
+  font-size: 1.125rem;
+  font-family: "Poppins", sans-serif;
+}
 
 .contacts {
   background-color: #efefef;
