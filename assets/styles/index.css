@@ -313,6 +313,7 @@ header.container-top nav.nav-bar ul.search-list img.menu-button {
 }
 @media (width >= 1024px) {
   .content-main .projects #projects-view .project {
+    height: 350px;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }

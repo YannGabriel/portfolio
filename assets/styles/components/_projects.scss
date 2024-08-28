@@ -28,6 +28,7 @@
     #projects-view{
       .project{
         @media (width >= 1024px){
+          height: 350px;
           display: grid;
           grid-template-columns: 1fr 1fr;
         }
