@@ -225,5 +225,42 @@ header.container-top nav.nav-bar ul.search-list img.menu-button {
 }
 
 .contacts {
+  padding-bottom: 3rem;
+  padding-top: 3rem;
   background-color: #efefef;
+  color: #1c1c1c;
+}
+.contacts h1.sectionTitle {
+  font-size: 2.3rem;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.1rem;
+  padding-left: 0.85rem;
+}
+.contacts p.moreContact {
+  width: 90%;
+  text-align: start;
+  padding-left: 0.85rem;
+}
+.contacts p.moreContact::first-letter {
+  padding-left: 1rem;
+}
+.contacts .social-links {
+  padding-top: 1.3rem;
+  padding-left: 0.85rem;
+}
+.contacts .social-links .media {
+  width: 90%;
+  margin: auto;
+  border-bottom: 1px solid #1c1c1c;
+  padding: 1rem 0rem 1.2rem 0rem;
+}
+.contacts .social-links .media .about-media::first-letter {
+  padding-left: 1rem;
+}
+.contacts .social-links .media .media-link {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1c1c1c;
 }/*# sourceMappingURL=index.css.map */

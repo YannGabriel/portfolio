@@ -1,5 +1,43 @@
 
 
 .contacts{
+  padding-bottom: 3rem;
+  padding-top: 3rem;
   background-color: $bckg-light;
+  color: $dark-text-color;
+  h1.sectionTitle{
+    font-size: $title-size;
+    font-family: $Poppins;
+    letter-spacing: 0.1rem;
+    padding-left: 0.85rem;
+  }
+  p.moreContact{
+    width: 90%;
+    text-align: start;
+    padding-left: 0.85rem;
+  }
+  p.moreContact::first-letter{
+    padding-left: 1rem;
+  }
+
+  .social-links{
+    padding-top: 1.3rem;
+    padding-left: 0.85rem;
+    .media{
+      width: 90%;
+      margin: auto;
+      border-bottom: 1px solid $dark-text-color;
+      padding: 1rem 0rem 1.2rem 0rem;
+      .about-media::first-letter{
+        padding-left: 1rem;
+      }
+      .media-link{
+        text-decoration: none;
+        color: $dark-text-color;
+        font-size: $text-size;
+        font-weight: 700;
+        color: $dark-text-color;
+      }
+    }
+  }
 }
