@@ -50,9 +50,22 @@ header.container-top nav.nav-bar ul.search-list {
 header.container-top nav.nav-bar ul.search-list li.serach-item {
   display: none;
 }
+@media (width >= 1204px) {
+  header.container-top nav.nav-bar ul.search-list li.serach-item {
+    display: block;
+    text-decoration: none;
+    color: #E3E4E5;
+    padding-right: 1.2rem;
+  }
+}
 header.container-top nav.nav-bar ul.search-list img.menu-button {
   padding-right: 0.95rem;
   width: 60px;
+}
+@media (width >= 1204px) {
+  header.container-top nav.nav-bar ul.search-list img.menu-button {
+    display: none;
+  }
 }
 
 #menuMobile {
@@ -62,6 +75,11 @@ header.container-top nav.nav-bar ul.search-list img.menu-button {
   left: 40%;
   text-align: end;
   background-color: #1c1c1c;
+}
+@media (width >= 1024px) {
+  #menuMobile {
+    display: none;
+  }
 }
 #menuMobile nav.nav-barMobile ul.mobileList {
   list-style-type: none;
@@ -82,15 +100,36 @@ header.container-top nav.nav-bar ul.search-list img.menu-button {
   text-align: center;
   padding-bottom: 9.25rem;
 }
+@media (width >= 1024px) {
+  .first-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+  }
+}
 .first-content h1.introduction {
   padding-top: 40%;
   width: 95%;
   margin: auto;
   font-size: 2.3rem;
 }
+@media (width >= 1024px) {
+  .first-content h1.introduction {
+    padding-left: 3rem;
+    padding-top: 30%;
+    text-align: start;
+    margin: 0;
+  }
+}
 .first-content h1.dev-name {
   padding-bottom: 0.8rem;
   font-size: 2.3rem;
+}
+@media (width >= 1024px) {
+  .first-content h1.dev-name {
+    padding-left: 3rem;
+    text-align: start;
+  }
 }
 .first-content p.start-txt {
   font-family: "Poppins", sans-serif;
@@ -99,8 +138,23 @@ header.container-top nav.nav-bar ul.search-list img.menu-button {
   font-size: 1.125rem;
   padding-inline-start: 1.1rem;
 }
+@media (width >= 1024px) {
+  .first-content p.start-txt {
+    padding-left: 3rem;
+    margin: 0;
+    width: 80%;
+    text-align: start;
+  }
+}
 .first-content a {
   text-decoration: none;
+}
+@media (width >= 1024px) {
+  .first-content .link-images {
+    padding-left: 3rem;
+    display: flex;
+    margin: 0;
+  }
 }
 .first-content button.curriculo {
   margin-top: 0.5rem;
@@ -112,6 +166,12 @@ header.container-top nav.nav-bar ul.search-list img.menu-button {
   padding: 0.75rem 1rem 0.75rem 1rem;
   border: none;
   border-radius: 10px;
+}
+@media (width >= 1204px) {
+  .first-content button.curriculo {
+    display: flex;
+    margin-left: 3rem;
+  }
 }
 
 .about-dev {

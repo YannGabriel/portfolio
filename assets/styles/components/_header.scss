@@ -12,8 +12,17 @@ header.container-top{
       list-style: none;
       li.serach-item{
         display: none;
+        @media(width >= 1204px){
+          display: block;
+          text-decoration: none;
+          color: $light-text-color;
+          padding-right: 1.2rem;
+        }
       }
       img.menu-button{
+        @media(width >= 1204px){
+          display: none;
+        }
         padding-right: 0.95rem;
         width: 60px;
       }
