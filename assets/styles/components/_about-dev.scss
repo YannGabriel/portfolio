@@ -1,4 +1,8 @@
 .about-dev{
+  @media(width >= 1204px){
+    display: grid;
+    grid-template-columns: 1fr 1fr;;
+  }
   background-color: $bckg-light;
   color: $dark-text-color;
   padding-top: 5rem;
@@ -7,12 +11,25 @@
     margin: auto;
   }
   .dev-description{
+    @media(width >= 1204px){
+      padding-right: 6rem;
+    }
+
     h1.about-me{
+      @media(width >= 1204px){
+        text-align: end;
+        padding-right: 1rem;
+        font-size: 3rem;
+      }
       font-size: $title-size;
       text-align: center;
       padding-bottom: 1rem;
     }
     p.dev-infos{
+      @media(width >= 1204px){
+        text-align: end;
+        font-size: 1.2rem;
+      }
       width: 95%;
       text-align: center;
       margin: auto;

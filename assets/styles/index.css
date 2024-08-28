@@ -179,14 +179,32 @@ header.container-top nav.nav-bar ul.search-list img.menu-button {
   color: #1c1c1c;
   padding-top: 5rem;
 }
+@media (width >= 1204px) {
+  .about-dev {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .about-dev img.image {
   display: flex;
   margin: auto;
+}
+@media (width >= 1204px) {
+  .about-dev .dev-description {
+    padding-right: 6rem;
+  }
 }
 .about-dev .dev-description h1.about-me {
   font-size: 2.3rem;
   text-align: center;
   padding-bottom: 1rem;
+}
+@media (width >= 1204px) {
+  .about-dev .dev-description h1.about-me {
+    text-align: end;
+    padding-right: 1rem;
+    font-size: 3rem;
+  }
 }
 .about-dev .dev-description p.dev-infos {
   width: 95%;
@@ -194,6 +212,12 @@ header.container-top nav.nav-bar ul.search-list img.menu-button {
   margin: auto;
   padding: 1rem 0rem 2.5rem 0rem;
   font-family: "Poppins", sans-serif;
+}
+@media (width >= 1204px) {
+  .about-dev .dev-description p.dev-infos {
+    text-align: end;
+    font-size: 1.2rem;
+  }
 }
 
 .skills {
