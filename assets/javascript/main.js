@@ -1,4 +1,4 @@
-function loadProjects() {
+async function loadProjects() {
   const url = 'https://raw.githubusercontent.com/YannGabriel/portfolio/main/assets/data/projects.json'
   fetch(url)
     .then(response => response.json())
