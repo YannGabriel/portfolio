@@ -3,7 +3,17 @@
     "name": "Sala de Leitura",
     "image": "./assets/imagens/projects-images/SalaLeitura.svg  ",
     "tecs": ["./assets/imagens/icons-images/html.svg", "./assets/imagens/icons-images/sass.svg", "./assets/imagens/icons-images/javascript.svg", "./assets/imagens/icons-images/bootstrap.svg"],
-    "description": "Projeto feito para a sala de leitura de um ambiente estudantil, focada na simplicidade e fácil interação"
+    "description": "Projeto feito para a sala de leitura de um ambiente estudantil, focada na simplicidade e fácil interação",
+    "buttons": [
+      {
+        "text": "Ver Projeto",
+        "link": "https://yanngabriel.github.io/SalaLeitura"
+      },
+      {
+        "text": "Código Fonte",
+        "link": "https://github.com/YannGabriel/SalaLeitura"
+      }
+    ]
   },
   {
     "name": "Brazilian Grill House",

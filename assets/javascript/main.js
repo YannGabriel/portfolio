@@ -35,12 +35,22 @@ function loadProjects() {
           techContainer.appendChild(techImage);
         })
 
+        const buttonContainer = document.createElement("div")
+        buttonContainer.classList.add("buttons")
+
+        projeto.buttons.forEach(button =>{
+          const button = document.createElement("button")
+          button.classList.add("buttonTarget")
+          buttonContainer.appendChild(buttonContainer)
+        })
+
         container.appendChild(project); 
         project.appendChild(img);
         project.appendChild(projectContent)
         projectContent.appendChild(title);
         projectContent.appendChild(description)
         projectContent.appendChild(techContainer);
+        projectContent.appendChild(buttons)
 
       });
     })
