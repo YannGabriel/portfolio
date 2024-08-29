@@ -43,10 +43,11 @@ async function loadProjects() {
           button.classList.add("buttonTarget");
           button.textContent = btn.text; 
           button.addEventListener("click", () => {
-            window.location.href = btn.link; 
+            window.open(btn.link, "_blank");
           });
           buttonContainer.appendChild(button);
         });
+        
 
         container.appendChild(project); 
         project.appendChild(img);
