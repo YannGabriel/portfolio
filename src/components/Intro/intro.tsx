@@ -14,6 +14,12 @@ export const Intro = () => {
       </div>
 
       <span className={styles.prof}>Web Developer</span>
+      
+      <p className={styles.introText}>
+      Como desenvolvedor web, estou sempre em busca de novos desafios e oportunidades para aplicar 
+      minha paixão por tecnologia. Acredito no poder da inovação para criar soluções que realmente impactem. 
+      Explore meu trabalho e conecte-se comigo através dos meus perfis e currículo!
+      </p>
     </div>
   );
 };
