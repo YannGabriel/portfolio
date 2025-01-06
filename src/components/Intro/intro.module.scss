@@ -1,0 +1,37 @@
+@use "../../sass/colors" as color;
+@use "../../sass/fonts" as fonts;
+
+.red{
+  color: color.$vibrantRed; 
+  font-size: 2rem;
+}
+
+.introContainer{
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  margin-top: 25%;
+
+  .welcomeContent, .prof{
+    font-size: 0.8rem;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: start;
+  }
+
+  .textWriter{
+    font-family: fonts.$Poppins;
+    font-weight: 700;
+    color: color.$blackColor;
+    font-size: 1.8rem;
+
+    div{
+      &:first-letter{
+        color: color.$vibrantRed;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
+  }
+
+}
