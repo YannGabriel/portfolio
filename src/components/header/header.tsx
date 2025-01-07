@@ -1,18 +1,31 @@
+//Icons
+import { CiMenuFries } from "react-icons/ci";
+import { IoMdClose } from "react-icons/io";
+import Logo from "../../assets/images/logo.png"
 
+//Style
+import styles from "./header.module.scss";
+import { useState } from "react";
 
-import video from "../../assets/video/startVideoDesk.mp4"
-import styles from "./header.module.scss"
+export const Header = () => {
+  const [menu, setMenu] = useState(false);
 
-export const Header = () =>{
-  return(
-    <header>
-      <video 
-      src={video}
-      autoPlay
-      muted
-      className={styles.video}
+  return (
+    <header className={styles.containerTop}>
+
+      <img src={Logo} 
+      alt="Logo Pessoal" 
+      className={styles.imageLogo}/>
+      <button
+        onClick={() => setMenu(!menu)}
+        className={`${styles.menuButton} ${menu ? styles.active : ""}`}
       >
-      </video>
+        
+        {menu ? 
+        <IoMdClose className={styles.icon} /> 
+        : <CiMenuFries  className={styles.icon}/>
+        }
+      </button>
     </header>
-  )
-}
+  );
+};
