@@ -1,4 +1,8 @@
+
+//Components
 import { Typewriter } from "../Typewriter/typewriter";
+import { MediasButtons } from "./Medias/mediasButtons";
+//Styles
 import styles from "./intro.module.scss";
 
 export const Intro = () => {
@@ -20,6 +24,8 @@ export const Intro = () => {
       minha paixão por tecnologia. Acredito no poder da inovação para criar soluções que realmente impactem. 
       Explore meu trabalho e conecte-se comigo através dos meus perfis e currículo!
       </p>
+
+      <MediasButtons/>
     </div>
   );
 };
