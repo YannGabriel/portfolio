@@ -3,6 +3,9 @@ import { LuGithub } from "react-icons/lu";
 import { IoLogoLinkedin } from "react-icons/io5";
 import Curriculo from "../../../assets/images/introIcons/curriculo.svg";
 
+//Animation
+import { motion } from "framer-motion";
+
 //Style
 import styles from "./mediasButtons.module.scss";
 
@@ -29,7 +32,10 @@ export const MediasButtons = () => {
     <div className={styles.mediasIntro}>
       <div className={styles.mediasContent}>
         {mediasLinks.map(({ href, icon, label }, index) => (
-          <a
+          <motion.a
+            initial= {{y: 40, opacity: -1}}
+            animate= {{y: 0, opacity: 1}}
+            transition={{duration: 0.75, delay: 0.45, ease: "linear" }}
             key={index}
             href={href}
             target="_blank"
@@ -38,11 +44,15 @@ export const MediasButtons = () => {
             aria-label={label}
           >
             {icon}
-          </a>
+          </motion.a>
         ))}
       </div>
 
-      <div className={styles.curriculoButton}>
+      <motion.div
+      initial= {{y: 60, opacity:-1}}
+      animate= {{y: 0, opacity: 1}}
+      transition={{duration: 0.8, delay: 1, ease: "linear"}}
+      className={styles.curriculoButton}>
         <a href={curriculo.href} className={curriculo.label}>
           <img
             src={Curriculo}
@@ -54,7 +64,7 @@ export const MediasButtons = () => {
             <span className={styles.curriculoDetail}>Virtual</span>
           </div>
         </a>
-      </div>
+      </motion.div>
     </div>
   );
 };
