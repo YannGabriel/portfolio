@@ -6,10 +6,32 @@
 
 .aboutContent{
   padding-top: 90px;
+  padding-bottom: 180px;
   .aboutImage{
     display: flex;
     justify-content: center;
     margin: auto;
+  }
 
+  .aboutTitle{
+    padding: 65px 0px 25px 0px;
+    text-align: center;
+    color: color.$vibrantRed;
+    font-family: fonts.$Poppins;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  .aboutText{
+    font-family: fonts.$Poppins;
+    font-weight: 300;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-size: 1rem;
+
+    .textDetails{
+      color: color.$vibrantRed;
+    }
   }
 }
