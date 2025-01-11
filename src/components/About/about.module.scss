@@ -1,0 +1,15 @@
+
+
+@use "../../sass/colors" as color;
+@use "../../sass/fonts" as fonts;
+
+
+.aboutContent{
+  padding-top: 90px;
+  .aboutImage{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+  }
+}
