@@ -25,7 +25,7 @@ export const About = () =>{
       initial= {{opacity: 0, y: 50}}
       whileInView={{ opacity: 1, y: 0 }} 
       viewport={{ once: true }}
-      transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+      transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
       >
         Sobre Mim
       </motion.h1>
@@ -35,7 +35,7 @@ export const About = () =>{
       initial= {{opacity: 0, y: 50}}
       whileInView={{ opacity: 1, y: 0 }} 
       viewport={{ once: true }}
-      transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
+      transition={{ duration: 0.8, delay: 1, ease: "easeOut" }}
       >
       Me chamo <span className={styles.textDetails}>Yann Gabriel</span>, sou estudante de
       <span className={styles.textDetails}> Ciências da Computação</span>, e sou apaixonado na área 
