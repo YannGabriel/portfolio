@@ -7,9 +7,10 @@ interface SectionProps{
   image?: string;
   name?: string
   text?: string
+  closeMenu?: () => void
 }
 
-export const MobileMenu = () => {
+export const MobileMenu = ({closeMenu}: SectionProps) => {
 
   const [sections, setSection] = useState<SectionProps[]>([])
 
@@ -18,13 +19,17 @@ export const MobileMenu = () => {
   }, []);
 
   return (
-    <>
-      {sections.map((section, index) => (
-        <div key={index}>
-          <img src={section.image} alt={section.name} />
-          <h2 className={styles.sectionTitle}>{section.text}</h2>
-        </div>
-      ))}
-    </>
+    <nav className={styles.mobileMenu}>
+      <ul className={styles.sectionsList}>
+        {sections.map((section, index) => (
+          <li className={styles.sections}>
+            <div key={index} className={styles.itemsList} onClick={closeMenu}>
+              <img src={section.image} alt={section.name} />
+              <h2 className={styles.sectionTitle}>{section.text}</h2>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
 };

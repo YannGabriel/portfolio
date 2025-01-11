@@ -1,0 +1,42 @@
+
+
+@use "../../../sass/colors" as color;
+@use "../../../sass/fonts" as fonts;
+
+.mobileMenu{
+  background-color: color.$vibrantRed;
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  top: 0px;
+  height: 100vh;
+  color: color.$pureWhite;
+  padding-top: 156px;
+  border-radius: 1rem 0px 0px 1rem;
+
+  .sectionsList{
+    list-style-type: none;
+
+    .sections{
+      display: block;
+      width: 90%;
+      margin: auto;
+      padding: 1.5rem;
+
+      &:not(:last-child){
+        border-bottom: 1px solid white;
+      }
+
+      .itemsList{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        .sectionTitle{
+          font-family: fonts.$Poppins;
+          font-weight: 300;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

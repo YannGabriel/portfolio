@@ -28,5 +28,8 @@
 
   .active{
     color: color.$pureWhite;
+    position: absolute;
+    z-index: 3;
+    left: 80%;
   }
 }
