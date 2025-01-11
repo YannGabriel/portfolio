@@ -28,19 +28,17 @@
     background-color: color.$vibrantRed;
     width: 40%;
     border-radius: 0.5rem;
-    padding: 0.25rem 0.8rem;
+    padding: 0.25rem ;
     a{
       text-decoration: none;
       color: color.$pureWhite;
       display: grid;
-      gap: 0.25rem;
       padding: 2.5%;
       grid-template-columns: 1fr 1fr;
       align-items: center;
 
       .curriculoIcon{
-        margin-top: 10%;
-        font-size: 25px;
+        width: 40px;
       }
     }
   }

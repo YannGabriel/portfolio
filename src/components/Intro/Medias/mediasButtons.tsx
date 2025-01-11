@@ -1,7 +1,7 @@
 //Icons
 import { LuGithub } from "react-icons/lu";
 import { IoLogoLinkedin } from "react-icons/io5";
-import { FaFileDownload } from "react-icons/fa";
+import Curriculo from "../../../assets/images/introIcons/curriculo.svg";
 
 //Style
 import styles from "./mediasButtons.module.scss";
@@ -21,7 +21,6 @@ const mediasLinks = [
 
 const curriculo = {
   href: "../../database/download/curriculo.pdf",
-  icon: <FaFileDownload />,
   label: "Curriculo",
 };
 
@@ -45,7 +44,11 @@ export const MediasButtons = () => {
 
       <div className={styles.curriculoButton}>
         <a href={curriculo.href} className={curriculo.label}>
-          <div className={styles.curriculoIcon}>{curriculo.icon}</div>
+          <img
+            src={Curriculo}
+            alt="Curriculo"
+            className={styles.curriculoIcon}
+          />
           <div className={styles.curriculoContent}>
             <h3 className={styles.curriculoTitle}>Curriculo</h3>
             <span className={styles.curriculoDetail}>Virtual</span>

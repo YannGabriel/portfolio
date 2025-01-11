@@ -2,6 +2,7 @@
 //Components
 import { Typewriter } from "../Typewriter/typewriter";
 import { MediasButtons } from "./Medias/mediasButtons";
+import { MobileMenu } from "../header/MenuMobile/menuMobile";
 //Styles
 import styles from "./intro.module.scss";
 
@@ -26,6 +27,7 @@ export const Intro = () => {
       </p>
 
       <MediasButtons/>
+      <MobileMenu/>
     </div>
   );
 };

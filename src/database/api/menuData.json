@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Home",
+    "image": "",
+    "text": "Home"
+  },
+  {
+    "name": "About",
+    "image": "../../assets/images/menuIcons/about.svg",
+    "text": "Sobre mim"
+  },
+  {
+    "name": "Skills",
+    "image": "skills.svg",
+    "text": "Habilidades"
+  },
+  {
+    "name": "Project",
+    "image": "projects.svg",
+    "text": "Projetos"
+  },
+  {
+    "name": "Contacts",
+    "image": "contacts.svg",
+    "text": "Contatos"
+  }
+]
