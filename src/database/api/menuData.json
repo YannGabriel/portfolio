@@ -1,27 +1,27 @@
 [
   {
     "name": "Home",
-    "image": "../../../public/images/menuIcons/home.svg",
+    "image": "../../../images/menuIcons/home.svg",
     "text": "Home"
   },
   {
     "name": "About",
-    "image": "../../../public/images/menuIcons/about.svg",
+    "image": "../../../images/menuIcons/about.svg",
     "text": "Sobre mim"
   },
   {
     "name": "Skills",
-    "image": "../../../public/images/menuIcons/skills.svg",
+    "image": "../../../images/menuIcons/skills.svg",
     "text": "Habilidades"
   },
   {
     "name": "Project",
-    "image": "../../../public/images/menuIcons/projects.svg",
+    "image": "../../../images/menuIcons/projects.svg",
     "text": "Projetos"
   },
   {
     "name": "Contacts",
-    "image": "../../../public/images/menuIcons/contacts.svg",
+    "image": "../../../images/menuIcons/contacts.svg",
     "text": "Contatos"
   }
 ]
