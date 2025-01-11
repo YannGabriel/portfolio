@@ -3,7 +3,7 @@
 
 .containerTop{
   display: flex;
-  width: 90%;
+  width: 88%;
   margin: auto;
   justify-content: space-between;
   align-items: center;
@@ -12,21 +12,21 @@
   border-bottom: 1px solid color.$vibrantRed;
 
   .imageLogo{
-    width: 2rem;
-    height: 2rem;
+    width: 44px;
+    height: 47px;
   }
 
   .menuButton{
-    background-color: color.$vibrantRed;
     border: none;
-    padding: 0.25rem 0.5rem;
-    color: color.$pureWhite;
-    font-size: 1.2rem;
-    border-radius: 0.5rem;
+    color: color.$blackColor;
+    font-size: 39px;
+    padding-top: 2.5%;
+    font-weight: bold;
+    background-color: transparent;
     transition: all 0.25s ease-in;
   }
 
   .active{
-    background-color: color.$blackColor;
+    color: color.$pureWhite;
   }
 }

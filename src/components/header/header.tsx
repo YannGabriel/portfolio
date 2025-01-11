@@ -12,15 +12,14 @@ export const Header = () => {
 
   return (
     <header className={styles.containerTop}>
-
-      <img src={Logo} 
+      <img 
+      src={Logo} 
       alt="Logo Pessoal" 
       className={styles.imageLogo}/>
       <button
         onClick={() => setMenu(!menu)}
         className={`${styles.menuButton} ${menu ? styles.active : ""}`}
       >
-        
         {menu ? 
         <IoMdClose className={styles.icon} /> 
         : <CiMenuFries  className={styles.icon}/>

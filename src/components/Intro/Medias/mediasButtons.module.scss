@@ -1,16 +1,63 @@
 @use "../../../sass/colors" as color;
 @use "../../../sass/fonts" as fonts;
 
-.mediasContent {
-  display: flex;
-  justify-content: center;
-  gap: 0.75rem;
-  .mediaTarget {
-    color: color.$pureWhite;
-    text-decoration: none;
+.mediasIntro{
+  padding-bottom: 21.8%;
+  .mediasContent {
+    display: flex;
+    justify-content: center;
+    gap: 8.9%;
+    padding-bottom: 27px;
+    .mediaTarget {
+      color: color.$pureWhite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      background-color: color.$vibrantRed;
+      border-radius: 0.5rem;
+      font-size: 35px;
+      padding: 0.5rem;
+    } 
+  }
+  
+  .curriculoButton{
+    margin: auto;
+    align-items: center;
+    display: flex;
     background-color: color.$vibrantRed;
-    padding: 0.6rem 0.75rem 0.5rem 0.75rem;
+    width: 40%;
     border-radius: 0.5rem;
-    font-size: 1.3rem;
+    padding: 0.25rem 0.8rem;
+    a{
+      text-decoration: none;
+      color: color.$pureWhite;
+      display: grid;
+      gap: 0.25rem;
+      padding: 2.5%;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+
+      .curriculoIcon{
+        margin-top: 10%;
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+.curriculoContent{
+  text-align: start;
+  .curriculoTitle{
+    font-family: fonts.$Poppins;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+  .curriculoDetail{
+    font-family: fonts.$Poppins;
+    font-weight: 300;
+    font-size: 0.8rem;
   }
 }
