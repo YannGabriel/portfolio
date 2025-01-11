@@ -1,11 +1,6 @@
 @use "../../sass/colors" as color;
 @use "../../sass/fonts" as fonts;
 
-.red{
-  color: color.$vibrantRed; 
-  font-size: 2rem;
-}
-
 .introContainer{
   display: block;
   text-align: center;
@@ -35,14 +30,6 @@
     font-weight: 700;
     color: color.$blackColor;
     font-size: 1.8rem;
-
-    div{
-      &:first-letter{
-        color: color.$vibrantRed;
-        font-size: 2rem;
-        font-weight: bold;
-      }
-    }
   }
 
   .introText{

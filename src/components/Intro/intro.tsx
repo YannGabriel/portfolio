@@ -1,7 +1,7 @@
 //Components
 import { Typewriter } from "../Typewriter/typewriter";
 import { MediasButtons } from "./Medias/mediasButtons";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 //Styles
 import styles from "./intro.module.scss";
 
@@ -12,7 +12,7 @@ export const Intro = () => {
       <motion.span 
       initial= {{opacity:0}}
       animate= {{ opacity: 1}}
-      transition={{duration: 0.25, delay: 0.1, ease: "linear"}}
+      transition={{duration: 0.15, delay: 0.1, ease: "linear"}}
       className={styles.welcomeContent}>
         Olá, mundo! Eu sou
       </motion.span>

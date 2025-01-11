@@ -7,6 +7,8 @@ interface TypeWriterProps {
 export const Typewriter = ({ textInput }: TypeWriterProps) => {
   const [text, setText] = useState("");
 
+  const targetText = text
+
   const writeScreen = (text: string, i = 0) => {
     if (i < text.length) {
       setText(text.slice(0, i + 1));
@@ -19,8 +21,19 @@ export const Typewriter = ({ textInput }: TypeWriterProps) => {
   }, [textInput]); 
 
   return (
-  <div className="writeTextContainer">
-    {text}
-    </div>
+    <span>
+      {Array.from(targetText).map((letter, idx) => (
+        <span
+          key={idx}
+          className={
+            letter === 'Y' || letter === 'G' || letter === '.' 
+              ? 'redLetter' 
+              : ''
+          }
+        >
+          {letter}
+        </span>
+      ))}
+    </span>
   )
 };
