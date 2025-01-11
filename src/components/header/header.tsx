@@ -2,6 +2,7 @@
 import { CiMenuFries } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
 import Logo from "../../assets/images/logo.png"
+import {motion} from "framer-motion"
 
 //Style
 import styles from "./header.module.scss";
@@ -18,11 +19,18 @@ export const Header = () => {
 
   return (
     <header className={styles.containerTop}>
-      <img 
+      <motion.img 
+      initial = {{x: -20, opacity:0}}
+      animate= {{x: 0, opacity:1}}
+      transition={{duration: 0.25, delay: 0.1, ease: "easeIn"}}
       src={Logo} 
       alt="Logo Pessoal" 
       className={styles.imageLogo}/>
-      <button
+
+      <motion.button
+      initial= {{x: 10, opacity:0}}
+      animate = {{x: 0, opacity: 1}}
+      transition={{duration: 0.15, delay: 0.05, ease: "easeIn"}}
         onClick={toggleMenu}
         className={`${styles.menuButton} ${menu ? styles.active : ""}`}
       >
@@ -30,7 +38,7 @@ export const Header = () => {
         <IoMdClose className={styles.icon} /> 
         : <CiMenuFries  className={styles.icon}/>
         }
-      </button>
+      </motion.button>
 
       {menu &&(
         <>
