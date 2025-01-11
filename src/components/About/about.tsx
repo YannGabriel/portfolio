@@ -10,7 +10,11 @@ import {motion} from "framer-motion"
 export const About = () =>{
   return(
     <section className={styles.aboutContent}>
-      <img 
+      <motion.img 
+       initial= {{opacity: 0, y: 50}}
+       whileInView={{ opacity: 1, y: 0 }} 
+       viewport={{ once: true }}
+       transition={{ duration: 0.8, ease: "easeOut" }}
       src={YannPhoto} 
       alt="Foto do Yann Gabriel mais novo" 
       className={styles.aboutImage}
@@ -21,7 +25,7 @@ export const About = () =>{
       initial= {{opacity: 0, y: 50}}
       whileInView={{ opacity: 1, y: 0 }} 
       viewport={{ once: true }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
+      transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
       >
         Sobre Mim
       </motion.h1>
