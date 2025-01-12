@@ -1,0 +1,46 @@
+{
+  "UiUI": [
+    {
+      "name": "Figma",
+      "path": "../../../images/skillsIcons/tecIcons/Ui&Ux/figma.svg"
+    }
+  ],
+  "Web": [
+    {
+      "name": "HTML",
+      "path": "../../../images/skillsIcons/tecIcons/webdev/html.svg"
+    },
+    {
+      "name": "CSS",
+      "path": "../../../images/skillsIcons/tecIcons/webdev/css.svg"
+    },
+    {
+      "name": "Javascript",
+      "path": "../../../images/skillsIcons/tecIcons/webdev/javascript.svg"
+    },
+    {
+      "name": "Typescript",
+      "path": "../../../images/skillsIcons/tecIcons/webdev/typescript.svg"
+    },
+    {
+      "name": "React",
+      "path": "../../../images/skillsIcons/tecIcons/webdev/react.svg"
+    },
+    {
+      "name": "Node",
+      "path": "../../../images/skillsIcons/tecIcons/webdev/node.svg"
+    },
+    {
+      "name": "Tailwind CSS",
+      "path": "../../../images/skillsIcons/tecIcons/webdev/tailwind.svg"
+    },
+    {
+      "name": "Sass",
+      "path": "../../../images/skillsIcons/tecIcons/webdev/sass.svg"
+    },
+    {
+      "name": "Bootstrap",
+      "path": "../../../images/skillsIcons/tecIcons/webdev/bootstrap.svg"
+    }
+  ]
+}
