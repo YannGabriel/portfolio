@@ -7,7 +7,7 @@ import styles from "./intro.module.scss";
 
 export const Intro = () => {
   return (
-    <div className={styles.introContainer}>
+    <section className={styles.introContainer} id="home">
 
       <motion.span 
       initial= {{opacity:0}}
@@ -40,6 +40,6 @@ export const Intro = () => {
 
       <MediasButtons />
 
-    </div>
+    </section>
   );
 };

@@ -24,17 +24,21 @@
       padding: 1.5rem;
 
       &:not(:last-child){
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid color.$pureWhite;
       }
 
-      .itemsList{
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        .sectionTitle{
-          font-family: fonts.$Poppins;
-          font-weight: 300;
-          font-size: 1rem;
+      a{
+        text-decoration: none;
+        color: color.$pureWhite;
+        .itemsList{
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          .sectionTitle{
+            font-family: fonts.$Poppins;
+            font-weight: 300;
+            font-size: 1rem;
+          }
         }
       }
     }

@@ -2,22 +2,26 @@
   {
     "name": "Home",
     "image": "../../../images/menuIcons/home.svg",
-    "text": "Home"
+    "text": "Home",
+    "path": "#home"
   },
   {
     "name": "About",
     "image": "../../../images/menuIcons/about.svg",
-    "text": "Sobre mim"
+    "text": "Sobre mim",
+    "path": "#about"
   },
   {
     "name": "Skills",
     "image": "../../../images/menuIcons/skills.svg",
-    "text": "Habilidades"
+    "text": "Habilidades",
+    "path": "#Skills"
   },
   {
     "name": "Project",
     "image": "../../../images/menuIcons/projects.svg",
-    "text": "Projetos"
+    "text": "Projetos",
+    "path": "#projects"
   },
   {
     "name": "Contacts",

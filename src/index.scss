@@ -6,7 +6,8 @@
   box-sizing: border-box;
 }
 
-body{
+body, html{
+  scroll-behavior: smooth;
   background-color: color.$pureWhite;
 }
 

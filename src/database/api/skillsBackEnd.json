@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Python",
+    "path": "../../../images/skillsIcons/tecIcons/database/python.svg"
+  },
+  {
+    "name": "Mongo",
+    "path": "../../../images/skillsIcons/tecIcons/database/mongo.svg"
+  },
+  {
+    "name": "SQL",
+    "path": "../../../images/skillsIcons/tecIcons/database/sql.svg"
+  }
+]
