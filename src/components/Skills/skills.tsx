@@ -52,6 +52,7 @@ export const Skills = () => {
       </motion.p>
 
       <section className={styles.skillsSections}>
+
         <div className={styles.skillSection}>
           <div className={styles.skillHeader}>
             <motion.img
@@ -120,6 +121,7 @@ export const Skills = () => {
               Desenvolvimento<span className={styles.redDetail}>W</span>eb
             </motion.h2>
           </div>
+
           <div className={styles.skillIcons}>
             {webSkills.map((skill, index) => (
               <motion.div
@@ -162,7 +164,7 @@ export const Skills = () => {
               transition={{ duration: 0.2, delay: 0.1, ease: "linear" }}
               className={styles.skillTitle}
             >
-              Back-End
+              Back<span className={styles.redDetail}>E</span>nd
             </motion.h2>
           </div>
           <div className={styles.skillIcons}>
@@ -188,6 +190,7 @@ export const Skills = () => {
             ou não.
           </p>
         </div>
+
       </section>
     </section>
   );
