@@ -19,5 +19,47 @@
         "logo": "../../../images/skillsIcons/tecIcons/webdev/sass.svg"
       }
     ]
+  },
+  {
+    "name": "GeoVisit",
+    "path": "",
+    "description": "Website de locais para viagem com bootstrap",
+    "linkView": "https://yanngabriel.github.io/geo-visit",
+    "linkGithub": "https://github.com/YannGabriel/Geo-Visit",
+    "tecs": [
+      {
+        "name": "BootStrap",
+        "logo": "../../../images/skillsIcons/tecIcons/webdev/bootstrap.svg"
+      },
+      {
+        "name": "HTML",
+        "logo": "../../../images/skillsIcons/tecIcons/webdev/html.svg"
+      },
+      {
+        "name": "css",
+        "logo": "../../../images/skillsIcons/tecIcons/webdev/css.svg"
+      }
+    ]
+  },
+  {
+    "name": "GrillHouse",
+    "path": "",
+    "description": "Website de uma churrascaria com JavaScript",
+    "linkView": "https://yanngabriel.github.io/Brazilian-GrillHouse",
+    "linkGithub": "https://github.com/YannGabriel/Brazilian-GrillHouse",
+    "tecs": [
+      {
+        "name": "HTML",
+        "logo": "../../../images/skillsIcons/tecIcons/webdev/html.svg"
+      },
+      {
+        "name": "css",
+        "logo": "../../../images/skillsIcons/tecIcons/webdev/css.svg"
+      },
+      {
+        "name": "JavaScript",
+        "logo": "../../../images/skillsIcons/tecIcons/webdev/javascript.svg"
+      }
+    ]
   }
 ]
