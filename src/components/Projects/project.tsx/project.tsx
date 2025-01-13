@@ -2,8 +2,8 @@ import ProjectsData from "../../../database/api/projectsData.json";
 import { useState, useEffect } from "react";
 import styles from "../projects.module.scss";
 import { motion } from "framer-motion";
-import Github from "../../../../public/images/projectsImages/ButtonImage/github.svg";
-import View from "../../../../public/images/projectsImages/ButtonImage/view.svg";
+import Github from "/public/images/projectsImages/ButtonImage/github.svg";
+import View from "/public/images/projectsImages/ButtonImage/view.svg";
 
 interface TecsProps {
   name?: string;
