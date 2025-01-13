@@ -64,7 +64,6 @@
         font-family: fonts.$Poppins;
         font-size: 0.8rem;
         font-weight: 300;
-        width: 80%;
       }
 
       .projectButtons{
@@ -74,10 +73,12 @@
 
         .targetButton{
           text-decoration: none;
-          
+
           .gitRepository{
+            width: 100px;
             display: flex;
             align-items: center;
+            justify-content: space-around;
             gap: 0.2rem;
             padding: 0.5rem;
             border-radius: 0.5rem;
@@ -93,8 +94,10 @@
           }
   
           .viewWeb{
+            width: 100px;
             display: flex;
             align-items: center;
+            justify-content: space-around;
             gap: 0.2rem;
             padding: 0.5rem;
             border-radius: 0.5rem;
