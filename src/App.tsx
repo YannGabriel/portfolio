@@ -1,3 +1,4 @@
+import { Footer } from "./components/Footer/footer"
 import { Header } from "./components/header/header"
 import { Layout } from "./pages/Layout/layout"
 
@@ -8,6 +9,7 @@ function App() {
     <main className="ContentMain">
       <Header/>
       <Layout/>
+      <Footer/>
     </main>
   )
 }

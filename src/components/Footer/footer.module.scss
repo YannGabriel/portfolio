@@ -1,0 +1,31 @@
+
+@use "../../sass/colors" as color;
+@use "../../sass/fonts" as fonts;
+
+.footerContent{
+  background-color: color.$vibrantRed;
+  height: 200px;
+  border-radius: 1rem 1rem 0rem 0rem;
+  padding: 1.5rem;
+  color: color.$pureWhite;
+
+  .websiteDev{
+    font-family: fonts.$OpenSans;
+    font-size: 0.7rem;
+  }
+
+  .devName{
+    font-family: fonts.$Poppins;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  .footerTexts{
+
+    .aboutProject{
+      font-family: fonts.$Poppins;
+      font-weight: 400;
+      font-size: 0.8rem;
+    }
+  }
+}
