@@ -32,7 +32,9 @@
   min-height: 90vh;
   .project{
     width: 370px;
+    height: 150px;
     display: grid;
+    align-items: center;
     gap: 2rem;
     grid-template-columns: 40% 60%;
 
@@ -58,6 +60,10 @@
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
+
+        .projectTec{
+          width: 1rem;
+        }
       }
 
       .aboutProject{

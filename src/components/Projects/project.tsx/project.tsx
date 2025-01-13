@@ -51,7 +51,9 @@ export const Project = () =>{
             <div className={styles.projectTecs}>
               {project.tecs?.map((tec) => (
                 <div>
-                  <img src={tec.logo} alt="" />
+                  <img src={tec.logo} 
+                  className={styles.projectTec}
+                  alt={tec.name} />
                 </div>
               ))}
             </div>
