@@ -1,0 +1,115 @@
+
+@use "../../sass/colors" as color;
+@use "../../sass/fonts" as fonts;
+
+
+.projectsSection{
+  width: 90%;
+  margin: auto;
+  padding-top: 5%;
+
+  .sectionTitle{
+    color: color.$vibrantRed;
+    font-family: fonts.$Poppins;
+    font-weight: bold;
+    font-size: 2rem;
+
+    .blackDetail{
+      color: color.$blackColor;
+    }
+  }
+
+  .projectsIntro{
+    color: color.$blackColor;
+    font-family: fonts.$Poppins;
+    font-weight: 300;
+    padding-left: 2.5%;
+  }
+}
+
+.projects{
+  padding-top: 5%;
+  min-height: 90vh;
+  .project{
+    width: 370px;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 40% 60%;
+
+    .projectImage{
+      width: 145px;
+      height: 145px;
+      border-radius: 1rem;
+      box-shadow: 6px 5px 0px #FF0100;
+    }
+
+    .projectContent{
+      .projectTitle{
+        font-family: fonts.$Poppins;
+        font-weight: bold;
+        font-size: 24px;
+        &::first-letter{
+          color: color.$vibrantRed;
+          font-size: 2rem;
+        }
+      }
+
+      .projectTecs{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .aboutProject{
+        font-family: fonts.$Poppins;
+        font-size: 0.8rem;
+        font-weight: 300;
+        width: 80%;
+      }
+
+      .projectButtons{
+        padding-top: 1.5%;
+        display: flex;
+        gap: 1rem;
+
+        .targetButton{
+          text-decoration: none;
+          
+          .gitRepository{
+            display: flex;
+            align-items: center;
+            gap: 0.2rem;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            background-color: color.$blackColor;
+            color: color.$pureWhite;
+            border: none;
+  
+            .gitTextButton{
+              font-family: fonts.$Poppins;
+              font-size: 12px;
+              font-weight: 300;
+            }
+          }
+  
+          .viewWeb{
+            display: flex;
+            align-items: center;
+            gap: 0.2rem;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            background-color: color.$vibrantRed;
+            color: color.$pureWhite;
+            border: none;
+            .webButtonText{
+              font-family: fonts.$Poppins;
+              font-size: 12px;
+              font-weight: 300;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}

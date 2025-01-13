@@ -1,0 +1,23 @@
+[
+  {
+    "name": "TaskiFy",
+    "path": "",
+    "description": "Website para organização de tarefas pessoais",
+    "linkView": "https://taskify-yanngabriels-projects.vercel.app/",
+    "linkGithub": "https://github.com/YannGabriel/TaskiFy",
+    "tecs": [
+      {
+        "name": "React",
+        "logo": "../../../images/skillsIcons/tecIcons/webdev/react.svg"
+      },
+      {
+        "name": "TypeScript",
+        "logo": "../../../images/skillsIcons/tecIcons/webdev/typescript.svg"
+      },
+      {
+        "name": "Sass",
+        "logo": "../../../images/skillsIcons/tecIcons/webdev/sass.svg"
+      }
+    ]
+  }
+]
