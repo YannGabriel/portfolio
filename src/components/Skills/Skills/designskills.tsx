@@ -1,43 +1,41 @@
+//LocalApis
+import DesignSkills from "../../../database/api/skillsDesign.json";
 
-//API
-import WebSkills from "../../../database/api/skillsWeb.json";
+//images
+import UIUX from "../../../assets/images/UiUX.svg";
 
 //Styles
-import styles from "../skills.module.scss"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
+import styles from "../skills.module.scss";
 
-//Image
-import WebDev from "../../../../public/images/skillsIcons/webDev.svg";
-
-//Hooks
+// Hooks
 import { useEffect, useState } from "react";
-
 
 interface SkillsProps {
   name?: string;
   path?: string;
 }
 
-export const FrontSkills = () =>{
+export const DesignsSkills = () => {
+  const [designSkills, setDesignSkills] = useState<SkillsProps[]>([]);
 
-    const [webSkills, setWebSkills] = useState<SkillsProps[]>([]);
+  useEffect(() => {
+    setDesignSkills(DesignSkills);
+  }, []);
 
-    useEffect(() => {
-      setWebSkills(WebSkills);
-    }, []);
-  
-    return (
-      <div className={styles.skillSection}>
+  return (
+    <div className={styles.skillSection}>
       <div className={styles.skillHeader}>
         <motion.img
           initial={{ x: -20, opacity: 0 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.2, delay: 0.1, ease: "linear" }}
-          src={WebDev}
-          alt="Desenvolvimento Web"
+          src={UIUX}
+          alt="UI e UX"
           className={styles.skillIcon}
         />
+
         <motion.h2
           initial={{ y: -20, opacity: 0 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -45,19 +43,19 @@ export const FrontSkills = () =>{
           transition={{ duration: 0.2, delay: 0.1, ease: "linear" }}
           className={styles.skillTitle}
         >
-          Desenvolvimento<span className={styles.redDetail}>W</span>eb
+          UI<span className={styles.redDetail}>&</span>UX
         </motion.h2>
       </div>
 
       <div className={styles.skillIcons}>
-        {webSkills.map((skill, index) => (
+        {designSkills.map((skill, index) => (
           <motion.div
             initial={{ y: -20, opacity: 0 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{
               duration: 0.2,
-              delay: 0.2 + index * 0.1,
+              delay: 0.1 + index * 0.1,
               ease: "linear",
             }}
             key={skill.name}
@@ -68,9 +66,9 @@ export const FrontSkills = () =>{
         ))}
       </div>
       <p className={styles.skillDescription}>
-        Desenvolvimento Web envolve a criação de sites e aplicações online,
-        combinando tecnologias
+        UI & UX são técnicas essenciais para criar layouts funcionais e
+        atraentes para os usuários.
       </p>
     </div>
-    )
-}
+  );
+};

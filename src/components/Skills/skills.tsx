@@ -3,9 +3,9 @@ import styles from "./skills.module.scss";
 import { motion } from "framer-motion";
 
 //Components
-import { FrontSkills } from "./FrontSkills/frontskills";
-import { DatasSkills } from "./FrontSkills/dataskills";
-import { DesignsSkills } from "./FrontSkills/designskills";
+import { FrontSkills } from "./Skills/frontskills";
+import { DatasSkills } from "./Skills/dataskills";
+import { DesignsSkills } from "./Skills/designskills";
 
 export const Skills = () => {
   return (

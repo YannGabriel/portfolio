@@ -3,7 +3,7 @@
 import DataSkills from "../../../database/api/skillsBackEnd.json";
 
 //Image
-import Data from "../../../../public/images/skillsIcons/data.svg";
+import Data from "../../../assets/images/data.svg";
 
 //Hooks
 import { useEffect, useState } from "react";
