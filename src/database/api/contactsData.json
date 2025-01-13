@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Whatsapp",
+    "image": "../../../images/contactImages/whatsapp.svg",
+    "description": "Entre em contato para saber mais sobre meus serviços e orçamentos!",
+    "link": ""
+  },
+  {
+    "name": "Instagram",
+    "image": "../../../images/contactImages/instagram.svg",
+    "description": "Acompanhe o que faço no meu dia a dia  como programador!",
+    "link": ""
+  },
+  {
+    "name": "Github",
+    "image": "../../../images/contactImages/github.svg",
+    "description": "Veja os códigos dos meus projetos e fique por dentro dos próximos!",
+    "link": "https://github.com/YannGabriel"
+  }
+]

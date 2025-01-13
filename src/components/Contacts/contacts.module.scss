@@ -1,0 +1,67 @@
+
+@use "../../sass/colors" as color;
+@use "../../sass/fonts" as fonts;
+
+
+.contactSection{
+  width: 90%;
+  margin: auto;
+
+  .contactTitle{
+    color: color.$blackColor;
+    font-family: fonts.$Poppins;
+    font-size: 2rem;
+
+    &::first-letter{
+      color: color.$vibrantRed;
+    }
+  }
+
+  .contactPageDesc{
+    font-family: fonts.$Poppins;
+    font-weight: 300;
+    font-size: 1rem;
+    padding-left: 2%;
+    padding: 0.5rem ;
+  }
+
+  .contactsSection{
+    .contactCard{
+
+      padding: 2rem 0rem;
+      &:not(:last-child){
+        border-bottom: 1px solid color.$vibrantRed;
+      }
+
+      .contact{
+        display: flex;
+        gap: 1rem;
+        padding: 0.5rem 0rem;
+      }
+
+      .contactContent{
+        .contactDescription{
+          font-family: fonts.$Poppins;
+          padding-left: 5%;
+          padding-bottom: 3.5%;
+          width: 90%;
+        }
+
+        .buttonTarget{
+          .contactButton{
+            background-color: color.$vibrantRed;
+            color: color.$pureWhite;
+            border: none;
+            border-radius: 0.5rem;
+            font-family: fonts.$Poppins;
+            font-weight: 300;
+            font-size: 1rem;
+            padding: 1rem; 
+            margin-left: 5%;
+          }
+        }
+      }
+    }
+  }
+
+}

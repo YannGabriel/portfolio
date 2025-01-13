@@ -26,6 +26,7 @@
   {
     "name": "Contacts",
     "image": "../../../images/menuIcons/contacts.svg",
-    "text": "Contatos"
+    "text": "Contatos",
+    "path": "#contacts"
   }
 ]
