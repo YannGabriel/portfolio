@@ -1,7 +1,7 @@
 [
   {
     "name": "TaskiFy",
-    "path": "",
+    "path": "../../../images/projectsImages/taskify.svg",
     "description": "Website para organização de tarefas pessoais",
     "linkView": "https://taskify-yanngabriels-projects.vercel.app/",
     "linkGithub": "https://github.com/YannGabriel/TaskiFy",
