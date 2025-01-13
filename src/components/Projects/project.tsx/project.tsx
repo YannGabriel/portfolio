@@ -3,7 +3,7 @@
 import ProjectsData from "../../../database/api/projectsData.json"
 import { useState, useEffect } from "react"
 import styles from "../projects.module.scss"
-import {motion, view} from "framer-motion"
+import {motion} from "framer-motion"
 import Github from "../../../../public/images/projectsImages/ButtonImage/github.svg"
 import View from "../../../../public/images/projectsImages/ButtonImage/view.svg"
 
@@ -62,6 +62,7 @@ export const Project = () =>{
 
             <div className={styles.projectButtons}>
               <a href={project.linkGithub}
+              rel="noopener noreferrer"
               className={styles.targetButton}
               target="blank"
               >
@@ -76,6 +77,7 @@ export const Project = () =>{
               </a>
 
               <a href={project.linkView}
+              rel="noopener noreferrer"
               className={styles.targetButton}
               target="blank">
                 <button className={styles.viewWeb}>
