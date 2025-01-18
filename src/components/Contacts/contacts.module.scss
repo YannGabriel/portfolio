@@ -12,6 +12,11 @@
     font-family: fonts.$Poppins;
     font-size: 2rem;
 
+    @media(width > 1000px){
+      padding-left: 15%;
+      padding-top: 4.5%;
+    }
+
     &::first-letter{
       color: color.$vibrantRed;
     }
@@ -23,9 +28,20 @@
     font-size: 1rem;
     padding-left: 2%;
     padding: 0.5rem ;
+
+    @media(width > 1000px){
+      padding-left: 17%;
+    }
+
   }
 
   .contactsSection{
+
+    @media(width > 1000px){
+      width: 60%;
+      margin: auto;
+    }
+
     .contactCard{
 
       padding: 2rem 0rem;

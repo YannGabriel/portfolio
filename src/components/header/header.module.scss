@@ -3,16 +3,15 @@
 
 .containerTop{
   display: flex;
-  position: fixed;
   top: 0;
-  width: 100%;
+  width: 90%;
+  margin: auto;
   background-color: color.$pureWhite;
-  z-index: 100;
   justify-content: space-between;
   align-items: center;
   padding: 0px 1rem;
   height: 80px;
-  box-shadow: 0 0px 5px color.$vibrantRed;
+  border-bottom: 1px solid color.$vibrantRed;
 
   .imageLogo{
     width: 44px;
@@ -27,6 +26,9 @@
     font-weight: bold;
     background-color: transparent;
     transition: all 0.25s ease-in;
+    @media (width >1000px){
+      display: none;
+    }
   }
 
   .active{
@@ -34,5 +36,30 @@
     position: absolute;
     z-index: 3;
     left: 85%;
+  }
+
+  .navbar{
+    @media(width< 1000px){
+      display: none;
+    }
+    .navList{
+      list-style-type: none;
+      display: flex;
+      gap: 1rem;
+      .navItem{
+        .itemTarget{
+          text-decoration: none;
+          font-family: fonts.$Poppins;
+          font-weight: 600;
+          color: color.$blackColor;
+          transition: all 0.3s ease-in;
+
+          &:hover{
+            font-size: 1.2rem;
+            color: color.$vibrantRed;
+          }
+        }
+      }
+    }
   }
 }

@@ -8,6 +8,7 @@ import {motion} from "framer-motion"
 import styles from "./header.module.scss";
 import { useState } from "react";
 import { MobileMenu } from "./MenuMobile/menuMobile";
+import { NavBar } from "./NavBar/navbar";
 
 export const Header = () => {
   const [menu, setMenu] = useState(false);
@@ -46,6 +47,8 @@ export const Header = () => {
         <div className={`${styles.overlay} ${menu ? styles.active : ""}`} onClick={() => setMenu(false)} />
         </>
       ) }
+
+      <NavBar/>
     </header>
   );
 };

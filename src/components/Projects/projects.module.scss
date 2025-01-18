@@ -14,6 +14,10 @@
     font-weight: bold;
     font-size: 2rem;
 
+    @media(width > 1000px){
+      padding-left: 15%;
+    }
+
     .blackDetail{
       color: color.$blackColor;
     }
@@ -24,12 +28,22 @@
     font-family: fonts.$Poppins;
     font-weight: 300;
     padding-left: 2.5%;
+
+    @media(width > 1000px){
+      padding-left: 17%;
+    }
+
   }
 }
 
 .projects{
   padding-top: 5%;
   min-height: 90vh;
+  
+  @media(width > 1000px){
+    width: 60%;
+    margin: auto;
+  }
   .project{
     margin-bottom: 10%;
     width: 370px;

@@ -8,6 +8,10 @@
     justify-content: center;
     gap: 8.9%;
     padding-bottom: 27px;
+
+    @media(width > 1000px){
+      gap: 4%;
+    }
     .mediaTarget {
       color: color.$pureWhite;
       display: flex;
@@ -36,11 +40,15 @@
       padding: 2.5%;
       grid-template-columns: 1fr 1fr;
       align-items: center;
-
       .curriculoIcon{
         width: 40px;
       }
     }
+
+    @media (width > 1000px){
+      width: 20%;
+    }
+
   }
 }
 
