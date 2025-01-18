@@ -7,15 +7,17 @@
   width: 90%;
   margin: auto;
 
-  .contactTitle{
+  .contactTitleSection{
+
+    @media (width > 1000px){
+      padding-left: 15%;
+      padding-top: 4.5rem;
+    }
+  }
+  .contactTitle, .contactTitleSection{
     color: color.$blackColor;
     font-family: fonts.$Poppins;
     font-size: 2rem;
-
-    @media(width > 1000px){
-      padding-left: 15%;
-      padding-top: 4.5%;
-    }
 
     &::first-letter{
       color: color.$vibrantRed;
@@ -36,14 +38,13 @@
   }
 
   .contactsSection{
-
     @media(width > 1000px){
       width: 60%;
       margin: auto;
+      padding: 0;
     }
 
     .contactCard{
-
       padding: 2rem 0rem;
       &:not(:last-child){
         border-bottom: 1px solid color.$vibrantRed;
@@ -79,5 +80,4 @@
       }
     }
   }
-
 }

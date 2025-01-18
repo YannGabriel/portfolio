@@ -10,7 +10,7 @@ export const Contacts = () => {
         viewport={{ once: true }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.3, delay: 0.1, ease: "linear" }}
-        className={styles.contactTitle}
+        className={styles.contactTitleSection}
       >
         Contatos
       </motion.h1>
