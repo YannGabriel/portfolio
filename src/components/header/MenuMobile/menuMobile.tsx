@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'motion/react';
 import menuData from "../../../database/api/menuData.json";
 import styles from "./menuMobile.module.scss";
 
@@ -20,30 +20,49 @@ export const MobileMenu = ({ closeMenu }: SectionProps) => {
   }, []);
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.2, ease: "linear" }}
-    >
-      <nav className={styles.mobileMenu}>
+    <AnimatePresence>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.3 }}
+        className={styles.overlay}
+      />
+      <motion.nav
+        initial={{ x: "100%" }}
+        animate={{ x: 0 }}
+        exit={{ x: "100%" }}
+        transition={{ type: "spring", damping: 25, stiffness: 200 }}
+        className={styles.mobileMenu}
+      >
         <ul className={styles.sectionsList}>
           {sections.map((section, index) => (
-            <li key={index} className={styles.sections}>
+            <motion.li 
+              key={index} 
+              className={styles.sections}
+              initial={{ x: 50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ 
+                duration: 0.4, 
+                delay: 0.1 + (index * 0.1),
+                ease: "easeOut"
+              }}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
               <a href={section.path}>
-                <motion.div
-                className={styles.itemsList}
-                onClick={closeMenu}
-                initial = {{y: -30 , opacity: 0}}
-                animate = {{y: 0, opacity: 1}}
-                transition={{duration: 0.3, delay:0.2 + (index * 0.1), ease: "linear"}}>
+                <div
+                  className={styles.itemsList}
+                  onClick={closeMenu}
+                >
                   {section.image && <img src={section.image} alt={section.name || 'Section'} />}
                   {section.text && <h2 className={styles.sectionTitle}>{section.text}</h2>}
-                </motion.div>
+                </div>
               </a>
-            </li>
+            </motion.li>
           ))}
         </ul>
-      </nav>
-    </motion.div>
+      </motion.nav>
+    </AnimatePresence>
   );
 };

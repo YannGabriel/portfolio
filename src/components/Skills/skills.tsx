@@ -1,6 +1,6 @@
 // Styles
 import styles from "./skills.module.scss";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 //Components
 import { FrontSkills } from "./Skills/frontskills";
@@ -10,32 +10,33 @@ import { DesignsSkills } from "./Skills/designskills";
 export const Skills = () => {
   return (
     <section className={styles.skillsContent} id="Skills">
-      <motion.h1
-        initial={{ x: -20, opacity: 0 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.2, delay: 0.1, ease: "linear" }}
-        className={styles.skillsTitle}
-      >
-        Skills<span className={styles.redDetail}>:</span>
-      </motion.h1>
-      <motion.p
-        initial={{ y: -20, opacity: 0 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.2, delay: 0.1, ease: "linear" }}
-        className={styles.skillsIntro}
-      >
-        Confira as tecnologias que utilizo em meus projetos!
-      </motion.p>
+      <div className={styles.skillsHeader}>
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className={styles.skillsTitle}
+        >
+          Skills<span className={styles.redDetail}>:</span>
+        </motion.h1>
+        
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+          className={styles.skillsIntro}
+        >
+          Confira as tecnologias que utilizo em meus projetos!
+        </motion.p>
+      </div>
 
-      <section className={styles.skillsSections}>
+      <div className={styles.skillsSections}>
         <DesignsSkills />
-
         <FrontSkills />
-
         <DatasSkills />
-      </section>
+      </div>
     </section>
   );
 };

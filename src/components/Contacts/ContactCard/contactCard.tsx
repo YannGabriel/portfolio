@@ -1,6 +1,6 @@
 //Styles
 import styles from "../contacts.module.scss";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 //API
 import ContactData from "../../../database/api/contactsData.json";
@@ -26,55 +26,58 @@ export const ContactCard = () => {
     <div className={styles.contactsSection}>
       {contacts.map((contact, index) => (
         <motion.div
-          animate={{ y: 40 + index * 0.2, opacity: 0 }}
-          viewport={{ once: true }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{
-            duration: 0.3,
-            delat: 0.1 + index * 0.1,
-            ease: "linear",
-          }}
+          key={index}
           className={styles.contactCard}
-          id={contact.name}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{
+            duration: 0.6,
+            delay: index * 0.1,
+            ease: "easeOut",
+          }}
+          whileHover={{ scale: 1.02 }}
         >
-          <div className={styles.contact}>
-            <motion.img
-              animate={{ x: -20, opacity: 0 }}
-              viewport={{ once: true }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{
-                duration: 0.3,
-                delat: 0.1 + index * 0.1,
-                ease: "linear",
-              }}
-              src={contact.image}
-              alt={contact.name}
-            />
-            <motion.h1
-              animate={{ x: -40, opacity: 0 }}
-              viewport={{ once: true }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{
-                duration: 0.3,
-                delat: 0.2 + index * 0.1,
-                ease: "linear",
-              }}
-              className={styles.contactTitle}
-            >
-              {contact.name}
-            </motion.h1>
-          </div>
+          <motion.div 
+            className={styles.contact}
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
+          >
+            <img src={contact.image} alt={contact.name} />
+            <h1 className={styles.contactTitle}>{contact.name}</h1>
+          </motion.div>
 
           <div className={styles.contactContent}>
-            <p className={styles.contactDescription}>{contact.description}</p>
+            <motion.p 
+              className={styles.contactDescription}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
+            >
+              {contact.description}
+            </motion.p>
 
-            <a
+            <motion.a
               href={contact.link}
               className={styles.buttonTarget}
-              id={contact.name}
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
             >
-              <button className={styles.contactButton}>{contact.name}</button>
-            </a>
+              <motion.button 
+                className={styles.contactButton}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                {contact.name}
+              </motion.button>
+            </motion.a>
           </div>
         </motion.div>
       ))}

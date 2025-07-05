@@ -1,43 +1,68 @@
-
-
 @use "../../../sass/colors" as color;
 @use "../../../sass/fonts" as fonts;
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  backdrop-filter: blur(5px);
+}
+
 .mobileMenu{
-  background-color: color.$vibrantRed;
-  position: absolute;
-  width: 50%;
-  left: 50%;
-  top: 0px;
+  background: linear-gradient(135deg, color.$vibrantRed 0%, darken(color.$vibrantRed, 10%) 100%);
+  position: fixed;
+  width: 280px;
+  right: 0;
+  top: 0;
   height: 100vh;
   color: color.$pureWhite;
-  padding-top: 156px;
-  border-radius: 1rem 0px 0px 1rem;
+  padding-top: 120px;
+  border-radius: 20px 0 0 20px;
+  z-index: 100;
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.3);
 
   .sectionsList{
     list-style-type: none;
+    padding: 0 20px;
 
     .sections{
       display: block;
-      width: 90%;
-      margin: auto;
-      padding: 1.5rem;
+      width: 100%;
+      margin-bottom: 8px;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: all 0.3s ease;
 
-      &:not(:last-child){
-        border-bottom: 1px solid color.$pureWhite;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        transform: translateX(-5px);
       }
 
       a{
         text-decoration: none;
         color: color.$pureWhite;
+        display: block;
+        padding: 16px;
+        
         .itemsList{
           display: flex;
           align-items: center;
-          gap: 0.5rem;
+          gap: 12px;
+          
+          img {
+            width: 24px;
+            height: 24px;
+            filter: brightness(0) invert(1);
+          }
+          
           .sectionTitle{
             font-family: fonts.$Poppins;
-            font-weight: 300;
-            font-size: 1rem;
+            font-weight: 400;
+            font-size: 1.1rem;
           }
         }
       }

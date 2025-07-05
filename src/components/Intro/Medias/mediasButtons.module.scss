@@ -2,68 +2,144 @@
 @use "../../../sass/fonts" as fonts;
 
 .mediasIntro{
-  padding-bottom: 21.8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
   .mediasContent {
     display: flex;
     justify-content: center;
-    gap: 8.9%;
-    padding-bottom: 27px;
+    gap: 24px;
 
-    @media(width > 1000px){
-      gap: 4%;
+    @media(width > 768px){
+      gap: 32px;
     }
+
     .mediaTarget {
       color: color.$pureWhite;
       display: flex;
       justify-content: center;
       align-items: center;
       text-decoration: none;
-      background-color: color.$vibrantRed;
-      border-radius: 0.5rem;
-      font-size: 35px;
-      padding: 0.5rem;
+      background: linear-gradient(135deg, color.$vibrantRed 0%, darken(color.$vibrantRed, 10%) 100%);
+      border-radius: 16px;
+      font-size: 28px;
+      padding: 16px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(255, 1, 0, 0.3);
+      position: relative;
+      overflow: hidden;
+
+      @media(width > 768px) {
+        font-size: 32px;
+        padding: 18px;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        transition: left 0.5s ease;
+      }
+
+      &:hover {
+        transform: translateY(-4px) scale(1.05);
+        box-shadow: 0 8px 25px rgba(255, 1, 0, 0.4);
+
+        &::before {
+          left: 100%;
+        }
+      }
+
+      &:active {
+        transform: translateY(-2px) scale(1.02);
+      }
     } 
   }
   
   .curriculoButton{
-    margin: auto;
-    align-items: center;
-    display: flex;
-    background-color: color.$vibrantRed;
-    width: 40%;
-    border-radius: 0.5rem;
-    padding: 0.25rem ;
-    a{
-      text-decoration: none;
-      color: color.$pureWhite;
-      display: grid;
-      padding: 2.5%;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      .curriculoIcon{
-        width: 40px;
+    background: linear-gradient(135deg, color.$vibrantRed 0%, darken(color.$vibrantRed, 10%) 100%);
+    border-radius: 16px;
+    padding: 16px 24px;
+    box-shadow: 0 4px 15px rgba(255, 1, 0, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+
+    @media (width > 768px){
+      padding: 18px 32px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+      transition: left 0.5s ease;
+    }
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(255, 1, 0, 0.4);
+
+      &::before {
+        left: 100%;
       }
     }
 
-    @media (width > 1000px){
-      width: 20%;
-    }
+    a{
+      text-decoration: none;
+      color: color.$pureWhite;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      
+      .curriculoIcon{
+        width: 32px;
+        height: 32px;
+        filter: brightness(0) invert(1);
 
+        @media(width > 768px) {
+          width: 36px;
+          height: 36px;
+        }
+      }
+    }
   }
 }
 
 .curriculoContent{
-  text-align: start;
+  text-align: left;
+  
   .curriculoTitle{
     font-family: fonts.$Poppins;
-    font-weight: bold;
-    font-size: 1rem;
-    padding: 0;
+    font-weight: 600;
+    font-size: 1.1rem;
     margin: 0;
+    line-height: 1.2;
+
+    @media(width > 768px) {
+      font-size: 1.2rem;
+    }
   }
+  
   .curriculoDetail{
     font-family: fonts.$Poppins;
     font-weight: 300;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin: 0;
+
+    @media(width > 768px) {
+      font-size: 1rem;
+    }
   }
 }

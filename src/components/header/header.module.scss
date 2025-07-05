@@ -2,61 +2,104 @@
 @use "../../sass/fonts" as fonts;
 
 .containerTop{
-  display: flex;
+  position: fixed;
   top: 0;
-  width: 90%;
-  margin: auto;
-  background-color: color.$pureWhite;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
   justify-content: space-between;
   align-items: center;
-  padding: 0px 1rem;
+  padding: 0 5%;
   height: 80px;
-  border-bottom: 1px solid color.$vibrantRed;
+  border-bottom: 1px solid rgba(255, 1, 0, 0.1);
+  transition: all 0.3s ease;
+
+  &.scrolled {
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  }
 
   .imageLogo{
     width: 44px;
     height: 47px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   .menuButton{
     border: none;
     color: color.$blackColor;
-    font-size: 39px;
-    padding-top: 2.5%;
+    font-size: 28px;
+    padding: 8px;
     font-weight: bold;
     background-color: transparent;
-    transition: all 0.25s ease-in;
-    @media (width >1000px){
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    z-index: 101;
+
+    @media (width > 1000px){
       display: none;
+    }
+
+    &:hover {
+      background-color: rgba(255, 1, 0, 0.1);
+      transform: scale(1.1);
     }
   }
 
   .active{
     color: color.$pureWhite;
-    position: absolute;
-    z-index: 3;
-    left: 85%;
+    background-color: color.$vibrantRed;
   }
 
   .navbar{
-    @media(width< 1000px){
+    @media(width < 1000px){
       display: none;
     }
     .navList{
       list-style-type: none;
       display: flex;
-      gap: 1rem;
+      gap: 2rem;
       .navItem{
         .itemTarget{
           text-decoration: none;
           font-family: fonts.$Poppins;
-          font-weight: 600;
+          font-weight: 500;
           color: color.$blackColor;
-          transition: all 0.3s ease-in;
+          padding: 8px 16px;
+          border-radius: 8px;
+          transition: all 0.3s ease;
+          position: relative;
 
-          &:hover{
-            font-size: 1.2rem;
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: color.$vibrantRed;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+          }
+
+          &:hover {
             color: color.$vibrantRed;
+            background-color: rgba(255, 1, 0, 0.05);
+            transform: translateY(-2px);
+
+            &::after {
+              width: 100%;
+            }
           }
         }
       }

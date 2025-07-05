@@ -4,7 +4,7 @@ import { IoLogoLinkedin } from "react-icons/io5";
 import Curriculo from "../../../assets/images/introIcons/curriculo.svg";
 
 //Animation
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 //Style
 import styles from "./mediasButtons.module.scss";
@@ -33,15 +33,21 @@ export const MediasButtons = () => {
       <div className={styles.mediasContent}>
         {mediasLinks.map(({ href, icon, label }, index) => (
           <motion.a
-            initial= {{y: 40, opacity: -1}}
-            animate= {{y: 0, opacity: 1}}
-            transition={{duration: 0.75, delay: 0.45, ease: "linear" }}
             key={index}
             href={href}
             target="_blank"
             rel="noopener noreferrer"
             className={styles.mediaTarget}
             aria-label={label}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            initial={{ y: 30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ 
+              duration: 0.5, 
+              delay: 0.2 + (index * 0.1),
+              ease: "easeOut"
+            }}
           >
             {icon}
           </motion.a>
@@ -49,10 +55,17 @@ export const MediasButtons = () => {
       </div>
 
       <motion.div
-      initial= {{y: 60, opacity:-1}}
-      animate= {{y: 0, opacity: 1}}
-      transition={{duration: 0.8, delay: 1, ease: "linear"}}
-      className={styles.curriculoButton}>
+        className={styles.curriculoButton}
+        whileHover={{ scale: 1.02 }}
+        whileTap={{ scale: 0.98 }}
+        initial={{ y: 40, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ 
+          duration: 0.6, 
+          delay: 0.5,
+          ease: "easeOut"
+        }}
+      >
         <a href={curriculo.href} className={curriculo.label}>
           <img
             src={Curriculo}
@@ -60,7 +73,7 @@ export const MediasButtons = () => {
             className={styles.curriculoIcon}
           />
           <div className={styles.curriculoContent}>
-            <h3 className={styles.curriculoTitle}>Curriculo</h3>
+            <h3 className={styles.curriculoTitle}>Currículo</h3>
             <span className={styles.curriculoDetail}>Virtual</span>
           </div>
         </a>
